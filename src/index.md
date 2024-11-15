@@ -74,11 +74,11 @@ Once you **master** a sharp knife you can get a lot done quickly without the dan
 ### What would it mean if you were as fluent with Hotwire as you are with Rails itself?
 
 You could:
-1. Get so much **more** done in less time.
-2. Actually **finish** that side-project with the little spare time that you have.
-3. Use your knowledge of server side rendering to **build** modern web UIs.
-4. **Increase** the value of your existing Rails knowledge.
-5. Recapture the **joy** of developing web applications that you once had.
+- Get so much **more** done in less time.
+- Actually **finish** that side-project with the little spare time that you have.
+- Use your knowledge of server side rendering to **build** modern web UIs.
+- **Increase** the value of your existing Rails knowledge.
+- Recapture the **joy** of developing web applications that you once had.
 
 Hotwire applications *can* turn into *spaghetti* code with RESTless Rails controllers and hard to follow Stimulus controllers, but they don't have to. Once you understand it you can avoid its pitfalls and play to its strengths. This is what you did with all powerful technologies that you mastered before. The best antidote to pitfalls of a powerful tull is your **deep understanding** of how it works and how best to use it.
 

@@ -1,34 +1,55 @@
 :root {
-  --body-background: #f2f2f2;
-  --body-color: #444;
-  --heading-color: black;
-  --action-color: #d64045;
+  --body-background: #ffffff;
+  --body-color: #2d3748;
+  --heading-color: #1e3a8a;
+  --heading-color-secondary: #2563eb;
+  --action-color: #4a5568;
+  --accent-color: #667eea;
+  --max-width: 780px;
 }
 
 body {
   background: var(--body-background);
   color: var(--body-color);
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif;
-  margin: 0 8px;
-  font-size: 108%;
-  line-height: 1.5;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.75;
 }
 
 a {
-  color: var(--action-color);
-  text-decoration: underline;
-  text-decoration-color: #ffb088;
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--accent-color);
 }
 
 h1 {
-  margin: 1rem 0 3rem;
-  text-align: center;
-  font-weight: 900;
-  font-size: 2.5rem;
-  color: var(--heading-color);
+  font-size: 3.5rem;
+  font-weight: 800;
   line-height: 1.2;
+  color: var(--heading-color);
+  text-align: center;
+  margin: 3rem 0;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--heading-color-secondary);
+  margin: 2.5rem 0 1.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
 }
 
 body > header {
@@ -58,17 +79,10 @@ body > nav a {
 }
 
 main {
-  margin: 2rem auto 4rem;
-  max-width: 65rem;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 2rem 1.5rem;
   min-height: calc(100vh - 200px);
-  padding: 25px 25px 50px;
-  background: white;
-  box-shadow: 2px 3px 3px #ddd;
-  border-radius: 3px;
-
-  @media (max-width: 500px) {
-    padding: 16px 16px 50px;
-  }
 }
 
 footer {
@@ -77,8 +91,48 @@ footer {
   font-size: 1em;
 }
 
+p {
+  margin: 1.5rem auto;
+  max-width: 65ch;
+}
+
+ul {
+  max-width: 65ch;
+  margin: 1.5rem auto;
+  list-style: none;
+}
+
+li {
+  margin: 0.75rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+li:before {
+  content: "•";
+  color: #fbbf24;
+  font-size: 2.5rem;
+  position: absolute;
+  left: 0;
+  top: -1.35rem;
+}
 hr {
   border: none;
-  border-top: 2px dotted #bbb;
-  margin: 3rem 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 4rem auto;
+  max-width: 40%;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
 }
