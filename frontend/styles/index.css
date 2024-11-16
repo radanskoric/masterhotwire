@@ -49,6 +49,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
+  color: var(--heading-color-secondary);
   margin: 2rem 0 1rem;
 }
 
@@ -130,6 +131,10 @@ hr {
 
   h2 {
     font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
   }
 
   body {
