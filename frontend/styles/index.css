@@ -101,6 +101,7 @@ ul {
   max-width: 65ch;
   margin: 1.5rem auto;
   list-style: none;
+  padding-left: 2.5rem;
 }
 
 li {
@@ -125,6 +126,10 @@ hr {
 }
 
 @media (max-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+
   h1 {
     font-size: 2.5rem;
   }
@@ -137,7 +142,7 @@ hr {
     font-size: 1.25rem;
   }
 
-  body {
-    font-size: 1rem;
+  ul {
+    padding-left: 1.25rem;
   }
 }
