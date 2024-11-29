@@ -146,3 +146,20 @@ hr {
     padding-left: 1.25rem;
   }
 }
+
+.fade-vertical {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+}

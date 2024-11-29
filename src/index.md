@@ -80,7 +80,7 @@ You could:
 - **Increase** the value of your existing Rails knowledge.
 - Recapture the **joy** of developing web applications that you once had.
 
-Hotwire applications *can* turn into *spaghetti* code with RESTless Rails controllers and hard to follow Stimulus controllers, but they don't have to. Once you understand it you can avoid its pitfalls and play to its strengths. This is what you did with all powerful technologies that you mastered before. The best antidote to pitfalls of a powerful tull is your **deep understanding** of how it works and how best to use it.
+Hotwire applications *can* turn into *spaghetti* code with RESTless Rails controllers and hard to follow Stimulus controllers, but they don't have to. Once you understand it you can avoid its pitfalls and play to its strengths. This is what you did with all powerful technologies that you mastered before. The best antidote to pitfalls of a powerful tool is your **deep understanding** of how it works and how best to use it.
 
 How much more confident would you be if you had that **understanding**?
 
@@ -105,11 +105,15 @@ This is what is waiting for you inside my **short e-book**: "Master Hotwire".
 
 Learn in bite-sized step by step lessons, guiding you through development of a collaborative *Kanban board application*. Immediately actionable knowledge is delivered in every lesson, starting with the very first one. You could even develop your own application in parallel, as you go.
 
+![An image sample of Kanban board building part](/images/pdfsamplecodealong.png){: .fade-vertical width="100%"}
+
 ## Get a deep understanding to implement the best solution
 
 Official documentation and most online tutorials and courses explain how to **use** Hotwire. That is enough for you to build your application but it's not enough to really know if you picked the best approach and built a long term maintainable application. It's not enough to quickly fix unexpected issues. For that you need a **deep understanding**.
 
 After introducing each concept, the book takes another step and explains how each part of Hotwire actually works under the hood. This is what you need to know that you picked the best solution. This is what enables you to debug issues in **minutes, not hours**.
+
+![An image sample of a deep dive chapter](/images/pdfsampledeepdive.png){: .fade-vertical width="100%"}
 
 ### What if you're too busy?
 
@@ -124,17 +128,6 @@ It's condensed experienced that you are able to consume in a short amount of tim
 You will gain an accurate mental model and understanding of Hotwire. You will be able to connect it to the body of knowledge and experience you already posses to develop new or introduce Hotwire to existing applications with complete confidence.
 
 Subscribe below to be notified when the book is released. There will be a big limited time discount only announced to my subscribers list:
-<script async data-uid="f452b98145" src="https://thoughtful-producer-2834.ck.page/f452b98145/index.js"></script>
-
-## Build that side-project in record time
-
-If your day job is a huge legacy application, switching to Hotwire might seem like an impossible task. And while the course also has a special section on introducing Hotwire to a legacy application, it's also perfect for launching a side-project.
-
-Hotwire and Rails are arguably the most productive combination for launching an application from scratch.
-
-The course is structured so that you can immediately start building an application and then enhance it as you learn new concepts. Even if you only have a few hours a week that will be enough to work through the course in a few weeks and build the first version of your application along side it.
-
-Subscribe below to be notified when book is released:
 <script async data-uid="f452b98145" src="https://thoughtful-producer-2834.ck.page/f452b98145/index.js"></script>
 
 # List of chapters
@@ -154,10 +147,23 @@ Wondering what's inside? Here's the list of chapter titles:
 - 1.9. Improve UX with Stimulus
 - 1.10. Stimulus being different from other frontend frameworks helps when a Hotwire application grows
 - 1.11. Exercise - Allow creating tickets directly in the columns
-- 2.0 Part II: Where you learn how to package a web app into native mobile apps with Hotwire Native
+- 2.0. Part II: Where you learn how to package a web app into native mobile apps with Hotwire Native *(coming soon)*
   - *details coming soon*
-- 3.0 Part III: Where you learn how to take it further
-  - *details coming soon*
+- 3.0. Part III: Where you learn how to take it further *(coming soon)*
+- 3.1. Understand how Turbo manages browsing history *(coming soon)*
+- 3.2. Advanced Stimulus usage *(coming soon)*
+- 3.3. Hotwire and SPA frameworks *(coming soon)*
+- 3.4. How to load test Turbo powered applications *(coming soon)*
+- 3.5. How to debug Hotwire applications *(coming soon)*
+- 3.6. Adding Turbo to a legacy application *(coming soon)*
+
+## Build that side-project in record time
+
+If your day job is a huge legacy application, switching to Hotwire might seem like an impossible task. And while the course also has a special section on introducing Hotwire to a legacy application, it's also perfect for launching a side-project.
+
+Hotwire and Rails are arguably the most productive combination for launching an application from scratch.
+
+The course is structured so that you can immediately start building an application and then enhance it as you learn new concepts. Even if you only have a few hours a week that will be enough to work through the course in a few weeks and build the first version of your application along side it.
 
 Subscribe to capture the launch discount:
 <script async data-uid="f452b98145" src="https://thoughtful-producer-2834.ck.page/f452b98145/index.js"></script>
