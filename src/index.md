@@ -174,6 +174,10 @@ Subscribe to capture the launch discount:
 
 Oh no! Send an email to [me@radanskoric.com](mailto:me@radanskoric.com).
 
+**How much will the book cost?**
+
+During the initial beta launch the book will be selling for 14 EUR (or 14 USD for U.S. buyers). The beta launch will only be announced on my mailing list. After the initial beta launch window the price will double to 28 EUR (28 USD).
+
 **Is there a money back guarantee?**
 
 If, for any reason, you find yourself less than fully satisfied with the book, you may request a refund any time within 30 days of the purchase. Just send an e-mail to [me@radanskoric.com](mailto:me@radanskoric.com) and include your reason for requesting the refund.
