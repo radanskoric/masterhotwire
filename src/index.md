@@ -167,3 +167,17 @@ The course is structured so that you can immediately start building an applicati
 
 Subscribe to capture the launch discount:
 <script async data-uid="f452b98145" src="https://thoughtful-producer-2834.ck.page/f452b98145/index.js"></script>
+
+## Frequently Asked Questions
+
+**I'm having issues with the book. Who can I contact?**
+
+Oh no! Send an email to [me@radanskoric.com](mailto:me@radanskoric.com).
+
+**Is there a money back guarantee?**
+
+If, for any reason, you find yourself less than fully satisfied with the book, you may request a refund any time within 30 days of the purchase. Just send an e-mail to [me@radanskoric.com](mailto:me@radanskoric.com) and include your reason for requesting the refund.
+
+**Can I get an invoice?**
+
+Absolutely! After making a purchase we will automatically receive a receipt. If you need a more detailed invoice, just [e-mail me](mailto:me@radanskoric.com).
