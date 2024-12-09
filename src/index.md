@@ -130,7 +130,20 @@ You will gain an accurate mental model and understanding of Hotwire. You will b
 Subscribe below to be notified when the book is released. There will be a big limited time discount only announced to my subscribers list:
 <script async data-uid="f452b98145" src="https://thoughtful-producer-2834.ck.page/f452b98145/index.js"></script>
 
-# List of chapters
+## What readers are saying
+
+<div class="reviews">
+  <% site.data.reviews.each do |review| %>
+    <div class="review-box">
+      <blockquote><%= review[:quote] %></blockquote>
+      <div class="reviewer">
+        <a href="<%= review[:link] %>" target="_blank" rel="noopener"><%= review[:name] %></a><span class="reviewer-title">, <%= review[:title] %></span>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+## List of chapters
 
 Wondering what's inside? Here's the list of chapter titles:
 

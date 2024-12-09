@@ -1,5 +1,6 @@
 import "$styles/index.css"
 import "$styles/syntax-highlighting.css"
+import "$styles/homepage.css"
 import * as Turbo from "@hotwired/turbo"
 import { Application } from "@hotwired/stimulus"
 

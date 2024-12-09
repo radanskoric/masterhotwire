@@ -1,0 +1,63 @@
+.fade-vertical {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+}
+
+.review-box {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  /* Create grid layout for tablets and larger screens */
+  .reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .review-box {
+    margin-bottom: 0; /* Remove margin bottom as grid gap handles spacing */
+  }
+}
+
+.review-box blockquote {
+  margin: 0 0 1.5rem 0;
+  font-style: italic;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.reviewer {
+  margin-top: auto;
+  text-align: right;
+}
+
+.reviewer a {
+  font-weight: bold;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.reviewer-title {
+  color: #6b7280;
+  font-size: 0.9em;
+}
