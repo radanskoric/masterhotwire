@@ -1,18 +1,19 @@
-FROM ruby:3.3.0
+FROM ruby:3.3.6
 
 # Install all of the preqeusities to actually building the app.
 RUN apt-get update \
   && apt-get install -y \
   vim \
   curl \
+  cmake \
   && curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - \
   && apt-get install -y nodejs\
   && npm install --global yarn\
   && rm -rf /var/lib/apt/lists/* \
-  && gem install bundler -v 2.5.22
+  && gem install bundler -v 2.5.23
 
 # Add some custom setup to the container shell for easier usage.
-COPY .devcontainer/load-profile.sh /etc/profile.d/
+COPY .devcontainer/load-profile.sh /etc/profile.d/load-profile.sh
 RUN chmod +x /etc/profile.d/load-profile.sh
 
 # Do not work as a root user.
@@ -38,4 +39,3 @@ EXPOSE 4000
 
 # Run the application when the container starts
 CMD ["bin/bridgetown", "start"]
-

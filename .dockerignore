@@ -25,7 +25,6 @@ bower_components
 .env
 
 # Dev and build only files
-.devcontainer
 .git
 Dockerfile
 .dockerignore
