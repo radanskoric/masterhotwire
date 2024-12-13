@@ -28,6 +28,11 @@ gem "bridgetown", "~> 1.3.4"
 # (you can optionally limit this to the "development" group)
 gem "puma", "< 7"
 
+gem "sequel"
+gem "sqlite3"
+
+gem "mail"
+
 # Uncomment to use the Inspectors API to manipulate the output
 # of your HTML or XML resources:
 # gem "nokogiri", "~> 1.13"
@@ -41,4 +46,6 @@ group :test do
   gem "minitest"
   gem "minitest-reporters"
   gem "rack-test"
+
+  gem "database_cleaner-sequel"
 end

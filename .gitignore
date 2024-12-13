@@ -5,6 +5,9 @@ output
 .bridgetown-webpack
 .routes.json
 
+db/storage/*.db
+!db/storage/development.db
+
 # Dependency folders
 node_modules
 bower_components

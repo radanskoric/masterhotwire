@@ -12,6 +12,8 @@ services:
         source: ..
         target: /app
     environment:
+      BRIDGETOWN_ENV: development
+      DATABASE_URL: sqlite://db/storage/development.db
       BUNDLE_PATH: vendor/bundle
       PORT: 4000
     ports:

@@ -10,6 +10,8 @@ primary_region = 'ams'
 
 [env]
   BRIDGETOWN_ENV = "production"
+  DATABASE_URL = "sqlite:///data/production.sqlite3"
+  AMAZON_SES_USERNAME = "AKIA4RCAOIMGW6BBSNOI"
 
 [http_service]
   internal_port = 4000
@@ -23,3 +25,7 @@ primary_region = 'ams'
   memory = '512mb'
   cpu_kind = 'shared'
   cpus = 1
+
+[[mounts]]
+  source = 'data'
+  destination = '/data'
