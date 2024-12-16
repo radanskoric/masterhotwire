@@ -3,8 +3,9 @@
   --body-color: #2d3748;
   --heading-color: #1e3a8a;
   --heading-color-secondary: #2563eb;
-  --action-color: #4a5568;
   --accent-color: #667eea;
+  --dimmed-color: #4b5563;
+  --element-background: #f8f9fa;
   --max-width: 780px;
 }
 

@@ -8,3 +8,15 @@
 <link rel="stylesheet" href="<%= webpack_path :css %>" data-turbo-track="reload" />
 <script src="<%= webpack_path :js %>" data-turbo-track="reload" defer></script>
 <%= live_reload_dev_js %>
+
+<script defer data-domain="masterhotwire.com" src="https://plausible.io/js/script.js"></script>
+
+<% if data.paddle %>
+  <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+  <script type="text/javascript">
+    Paddle.Environment.set("sandbox");
+    Paddle.Initialize({
+      token: "test_bf4cb5669c6c60cc8ccca5e7421"
+    });
+  </script>
+<% end %>

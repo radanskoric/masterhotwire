@@ -16,7 +16,7 @@
 }
 
 .review-box {
-  background: #f8f9fa;
+  background: var(--element-background);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -42,7 +42,7 @@
 .review-box blockquote {
   margin: 0 0 1.5rem 0;
   font-style: italic;
-  color: #4b5563;
+  color: var(--dimmed-color);
   line-height: 1.6;
 }
 
@@ -53,11 +53,48 @@
 
 .reviewer a {
   font-weight: bold;
-  color: #2563eb;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
 .reviewer-title {
-  color: #6b7280;
+  color: var(--dimmed-color);
   font-size: 0.9em;
+}
+
+.cta-box {
+  background: var(--element-background);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.buy-button-container {
+  text-align: center;
+}
+
+.buy-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 1rem 0;
+}
+
+.buy-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-bottom-color: transparent;
+}
+
+.buy-button:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
