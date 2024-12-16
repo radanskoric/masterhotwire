@@ -41,6 +41,8 @@ gem "mail"
 gem "nokolexbor", "~> 0.4"
 
 gem "debug"
+gem "stackprof"
+gem "sentry-ruby"
 
 group :test do
   gem "minitest"
