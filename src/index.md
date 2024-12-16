@@ -1,15 +1,17 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-
 layout: default
 paddle: true
 ---
+
+<script async data-uid="feaa96bc97" src="https://thoughtful-producer-2834.kit.com/feaa96bc97/index.js"></script>
 
 # Master Hotwire
 
 ## Build Modern Web Apps with Rails Simplicity
 
 *An e-book for experienced Rails developers to quickly get up to speed with Hotwire.*
+
+Written by [Radan Skorić](https://radanskoric.com).
 
 ## Can modern web UI be simple and fun to build?
 
@@ -85,8 +87,7 @@ Hotwire applications *can* turn into *spaghetti* code with RESTless Rails contro
 
 How much more confident would you be if you had that **understanding**?
 
-If you're ready to master Hotwire, subscribe below to be notified when the book is released. There will be a big limited time discount only announced to my subscribers list:
-<script async data-uid="f452b98145" src="https://thoughtful-producer-2834.ck.page/f452b98145/index.js"></script>
+<%= render "cta" %>
 
 ## "How would you implement this UI with Hotwire?"
 
@@ -128,8 +129,7 @@ It's condensed experienced that you are able to consume in a short amount of tim
 
 You will gain an accurate mental model and understanding of Hotwire. You will be able to connect it to the body of knowledge and experience you already posses to develop new or introduce Hotwire to existing applications with complete confidence.
 
-Subscribe below to be notified when the book is released. There will be a big limited time discount only announced to my subscribers list:
-<script async data-uid="f452b98145" src="https://thoughtful-producer-2834.ck.page/f452b98145/index.js"></script>
+<%= render "cta" %>
 
 ## What readers are saying
 
@@ -179,8 +179,7 @@ Hotwire and Rails are arguably the most productive combination for launching an 
 
 The course is structured so that you can immediately start building an application and then enhance it as you learn new concepts. Even if you only have a few hours a week that will be enough to work through the course in a few weeks and build the first version of your application along side it.
 
-Subscribe to capture the launch discount:
-<script async data-uid="f452b98145" src="https://thoughtful-producer-2834.ck.page/f452b98145/index.js"></script>
+<%= render "cta" %>
 
 ## Frequently Asked Questions
 
@@ -205,3 +204,5 @@ If, for any reason, you find yourself less than fully satisfied with the book, y
 **Can I get an invoice?**
 
 Absolutely! After making a purchase you will automatically receive a receipt. If you need a more detailed invoice, just [e-mail me](mailto:me@radanskoric.com).
+
+<%= render "cta" %>
