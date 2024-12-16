@@ -13,7 +13,7 @@ Bridgetown.configure do |config|
   # You can configure the inflector used by Zeitwerk. In v2.0,
   # ActiveSupport::Inflector will become the default.
   #
-  # config.inflector = ActiveSupport::Inflector
+  config.inflector = ActiveSupport::Inflector
   #
   # Add new inflection rules using the following format. Inflections
   # are locale specific, and you may define rules for as many different
@@ -26,9 +26,9 @@ Bridgetown.configure do |config|
   # end
   #
   # These inflection rules are supported but not enabled by default:
-  # ActiveSupport::Inflector.inflections(:en) do |inflect|
-  #   inflect.acronym "RESTful"
-  # end
+  ActiveSupport::Inflector.inflections(:en) do |inflect|
+    inflect.acronym "DB"
+  end
 
   # You can use `init` to initialize various Bridgetown features or plugin gems.
   # For example, you can use the Dotenv gem to load environment variables from

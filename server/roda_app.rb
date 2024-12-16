@@ -4,9 +4,7 @@
 #
 # Learn more at: https://www.bridgetownrb.com/docs/routes
 
-require "sequel"
-DB = Sequel.connect(ENV.fetch("DATABASE_URL"))
-
+require_relative "db"
 require_relative "models/user"
 require_relative "mailer"
 

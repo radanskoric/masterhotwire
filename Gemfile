@@ -28,7 +28,7 @@ gem "bridgetown", "~> 1.3.4"
 # (you can optionally limit this to the "development" group)
 gem "puma", "< 7"
 
-gem "sequel"
+gem "sequel", github: "radanskoric/sequel", branch: "support-wal-mode-on-sqlite"
 gem "sqlite3"
 
 gem "mail"

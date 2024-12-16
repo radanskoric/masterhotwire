@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/radanskoric/sequel.git
+  revision: 89b780af763327642b1dc173a92bd328c68e7a79
+  branch: support-wal-mode-on-sqlite
+  specs:
+    sequel (5.87.0)
+      bigdecimal
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -157,8 +165,6 @@ GEM
     rouge (4.5.1)
     ruby-progressbar (1.13.0)
     securerandom (0.4.0)
-    sequel (5.87.0)
-      bigdecimal
     serbea (1.0.1)
       activesupport (>= 6.0)
       erubi (>= 1.10)
@@ -208,7 +214,7 @@ DEPENDENCIES
   nokolexbor (~> 0.4)
   puma (< 7)
   rack-test
-  sequel
+  sequel!
   sqlite3
 
 BUNDLED WITH

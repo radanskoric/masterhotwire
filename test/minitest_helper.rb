@@ -8,7 +8,8 @@ ENV["DATABASE_URL"] = "sqlite://db/storage/test.db"
 require_relative "bridgetown_test"
 require "database_cleaner/sequel"
 
-DB = Sequel.connect(ENV.fetch("DATABASE_URL"))
+require_relative "../server/db"
+
 DatabaseCleaner.url_allowlist = [%r{^sqlite://db/storage}]
 DatabaseCleaner[:sequel].db = DB
 DatabaseCleaner.clean_with :truncation
