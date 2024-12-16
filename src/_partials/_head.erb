@@ -14,9 +14,11 @@
 <% if data.paddle %>
   <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
   <script type="text/javascript">
-    Paddle.Environment.set("sandbox");
+    <% unless ENV["PADDLE_LIVE"] == "true" %>
+      Paddle.Environment.set("sandbox");
+    <% end %>
     Paddle.Initialize({
-      token: "test_bf4cb5669c6c60cc8ccca5e7421"
+      token: "<%= ENV["PADDLE_TOKEN"] %>"
     });
   </script>
 <% end %>

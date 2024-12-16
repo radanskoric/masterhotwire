@@ -26,6 +26,9 @@ jobs:
       - name: Build
         env:
           BRIDGETOWN_ENV: production
+          PADDLE_TOKEN: ${{ secrets.PADDLE_TOKEN }}
+          PADDLE_LIVE: ${{ vars.PADDLE_LIVE }}
+          PADDLE_PRICE_ID: ${{ vars.PADDLE_PRICE_ID }}
         run: bin/bridgetown deploy
 
       - name: Upload build artifact

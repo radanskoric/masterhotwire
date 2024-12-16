@@ -2,6 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 
 layout: default
+paddle: true
 ---
 
 # Master Hotwire
@@ -203,4 +204,4 @@ If, for any reason, you find yourself less than fully satisfied with the book, y
 
 **Can I get an invoice?**
 
-Absolutely! After making a purchase we will automatically receive a receipt. If you need a more detailed invoice, just [e-mail me](mailto:me@radanskoric.com).
+Absolutely! After making a purchase you will automatically receive a receipt. If you need a more detailed invoice, just [e-mail me](mailto:me@radanskoric.com).
