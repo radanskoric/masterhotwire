@@ -81,6 +81,7 @@ body > nav a {
 }
 
 main {
+  position: relative;
   margin: 0 auto;
   max-width: var(--max-width);
   padding: 2rem 1.5rem;

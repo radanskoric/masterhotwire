@@ -98,3 +98,10 @@
   transform: translateY(0);
   box-shadow: none;
 }
+
+.buy-button-top-right {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem 0.75rem;
+}

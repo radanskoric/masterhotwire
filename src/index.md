@@ -5,6 +5,16 @@ paddle: true
 
 <script async data-uid="feaa96bc97" src="https://thoughtful-producer-2834.kit.com/feaa96bc97/index.js"></script>
 
+<a
+  class="buy-button buy-button-top-right"
+  data-turbo="false"
+  data-controller="checkout"
+  data-action="checkout#start"
+  data-checkout-price-id-value="<%= ENV["PADDLE_PRICE_ID"] %>">
+  <b>Buy now</b>
+</a>
+
+
 # Master Hotwire
 
 ## Build Modern Web Apps with Rails Simplicity
