@@ -29,3 +29,7 @@ require "bridgetown-core/rack/logger"
 log_formatter do |msg|
   Bridgetown::Rack::Logger.message_with_prefix msg
 end
+
+before_fork do
+  Sequel::DATABASES.each(&:disconnect)
+end
