@@ -189,8 +189,6 @@ Hotwire and Rails are arguably the most productive combination for launching an 
 
 The course is structured so that you can immediately start building an application and then enhance it as you learn new concepts. Even if you only have a few hours a week that will be enough to work through the course in a few weeks and build the first version of your application along side it.
 
-<%= render "cta" %>
-
 ## Frequently Asked Questions
 
 **I'm having issues with the book. Who can I contact?**
@@ -199,7 +197,7 @@ Oh no! Send an email to [me@radanskoric.com](mailto:me@radanskoric.com).
 
 **How much will the book cost?**
 
-During the initial beta launch discount window the book will be selling for 14 EUR. The beta launch will only be announced on my mailing list and will last for a few days. After the initial beta launch discount window the price will double to 28 EUR.
+The book is currently in Beta and selling for <b>€28</b>. For that price you will receive the fully completed part I (see list of chapters above for details), and lifetime access to all future versions.
 
 **What is included in the beta version purchase?**
 
