@@ -17,6 +17,7 @@ services:
       BUNDLE_PATH: vendor/bundle
       PADDLE_TOKEN: "test_bf4cb5669c6c60cc8ccca5e7421"
       PADDLE_PRICE_ID: "pri_01ja5tas8g0pskcekk8y3h81vw"
+      PADDLE_WEBHOOK_SECRET_KEY: "pdl_ntfset_01jf05a3t0w3n3z6dxgjmzbe4v_Q7F59cxFcNGByKdkI8TwDGrwPZ8sZrMm"
       PORT: 4000
     ports:
       - "4000:4000"

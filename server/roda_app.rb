@@ -7,8 +7,12 @@
 require_relative "db"
 require_relative "models/user"
 require_relative "mailer"
+require_relative "lib/paddle_signature"
+require_relative "roda_plugins/paddle"
 
 require 'sentry-ruby'
+require 'openssl'
+
 Sentry.init do |config|
   config.dsn = ENV["SENTRY_DSN"]
   config.breadcrumbs_logger = [:active_support_logger, :http_logger]
@@ -21,6 +25,8 @@ class RodaApp < Roda
   use Sentry::Rack::CaptureExceptions
   plugin :bridgetown_server
   plugin :json_parser
+  plugin :request_headers
+  plugin :paddle, webhook_secret_key: ENV["PADDLE_WEBHOOK_SECRET_KEY"]
 
   # Some Roda configuration is handled in the `config/initializers.rb` file.
   # But you can also add additional Roda configuration here if needed.
@@ -32,6 +38,8 @@ class RodaApp < Roda
     r.on "webhook" do
       # Paddle webhook endpoint for customer creation
       r.post "paddle" do
+        r.verify_paddle_signature!
+
         # Process the webhook payload
         payload = r.params
 

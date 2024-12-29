@@ -5,8 +5,12 @@ output
 .bridgetown-webpack
 .routes.json
 
+# Database
 db/storage/*.db
 !db/storage/development.db
+
+# Logs
+log/*.log
 
 # Dependency folders
 node_modules
