@@ -91,6 +91,7 @@ class TestPaddleWebhook < Minitest::Test
     user = Models::User[user_id]
     assert_equal @email, user.email
     assert_equal true, user.paid
+    assert_equal true, user.product_sent
 
     mails = Mail::TestMailer.deliveries
     assert_equal 1, mails.size

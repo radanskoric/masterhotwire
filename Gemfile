@@ -20,6 +20,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # If you need to upgrade/switch Bridgetown versions, change the line below
 # and then run `bundle update bridgetown`
 gem "bridgetown", "~> 1.3.4"
+gem "dotenv"
 
 # Uncomment to add file-based dynamic routing to your project:
 # gem "bridgetown-routes", "~> 1.3.4"
@@ -32,6 +33,8 @@ gem "sequel", github: "radanskoric/sequel", branch: "support-wal-mode-on-sqlite"
 gem "sqlite3"
 
 gem "mail"
+
+gem "paddle", "~> 2.6"
 
 # Uncomment to use the Inspectors API to manipulate the output
 # of your HTML or XML resources:

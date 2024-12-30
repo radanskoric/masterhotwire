@@ -26,7 +26,7 @@ class Mailer < Roda
   plugin :mailer
 
   route do |r|
-    from "me@radanskoric.com"
+    from "Master Hotwire Author <me@radanskoric.com>"
 
     r.on "users", Integer do |user_id|
       no_mail! unless (@user = Models::User[user_id])
@@ -35,7 +35,7 @@ class Mailer < Roda
 
       r.mail "purchase" do
         subject "Your copy of Master Hotwire is here!"
-        text_part "purchase.txt"
+        text_part render("purchase.txt")
         add_file "src/master-hotwire.pdf"
       end
     end

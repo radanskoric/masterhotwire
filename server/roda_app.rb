@@ -53,6 +53,7 @@ class RodaApp < Roda
           user = Models::User.first(paddle_id: payload["data"]["customer_id"])
           user.update(paid: true)
           Mailer.sendmail("/users/#{user.id}/purchase")
+          user.update(product_sent: true)
         end
 
         # Return 200 OK status

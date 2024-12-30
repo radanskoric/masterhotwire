@@ -33,9 +33,8 @@ Bridgetown.configure do |config|
   # You can use `init` to initialize various Bridgetown features or plugin gems.
   # For example, you can use the Dotenv gem to load environment variables from
   # `.env`. Just `bundle add dotenv` and then uncomment this:
-  #
-  # init :dotenv
-  #
+
+  init :dotenv
 
   # Uncomment to use Bridgetown SSR (aka dynamic rendering of content via Roda):
   #
@@ -60,4 +59,8 @@ Bridgetown.configure do |config|
 
   # For more documentation on how to configure your site using this initializers file,
   # visit: https://edge.bridgetownrb.com/docs/configuration/initializers/
+
+  except :static do
+    init :paddle, api_key: ENV["PADDLE_API_KEY"]
+  end
 end
