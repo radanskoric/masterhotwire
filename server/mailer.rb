@@ -32,6 +32,7 @@ class Mailer < Roda
       no_mail! unless (@user = Models::User[user_id])
 
       to @user.email
+      bcc "me@radanskoric.com"
 
       r.mail "purchase" do
         subject "Your copy of Master Hotwire is here!"
