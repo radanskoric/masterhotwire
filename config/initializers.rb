@@ -61,6 +61,8 @@ Bridgetown.configure do |config|
   # visit: https://edge.bridgetownrb.com/docs/configuration/initializers/
 
   except :static do
-    init :paddle, api_key: ENV["PADDLE_API_KEY"]
+    init :paddle,
+      api_key: ENV["PADDLE_API_KEY"],
+      environment: ENV["PADDLE_LIVE"] == "true" ? :production : :sandbox
   end
 end

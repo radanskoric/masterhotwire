@@ -12,6 +12,7 @@ primary_region = 'ams'
   BRIDGETOWN_ENV = "production"
   DATABASE_URL = "sqlite:///data/production.sqlite3"
   AMAZON_SES_USERNAME = "AKIA4RCAOIMGW6BBSNOI"
+  PADDLE_LIVE=true
   PADDLE_TOKEN = "test_bf4cb5669c6c60cc8ccca5e7421"
   PADDLE_PRICE_ID = "pri_01ja5tas8g0pskcekk8y3h81vw"
 
