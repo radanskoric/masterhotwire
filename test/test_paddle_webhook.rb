@@ -94,10 +94,10 @@ class TestPaddleWebhook < Minitest::Test
     assert_equal true, user.product_sent
 
     mails = Mail::TestMailer.deliveries
-    assert_equal 1, mails.size
-    mail = mails.first
-    assert mail.subject.include?("Master Hotwire")
-    assert_equal "application/pdf; filename=master-hotwire.pdf", mail.attachments.first.content_type
+    assert_equal 0, mails.size # Shadow rollout, no emails for now
+    # mail = mails.first
+    # assert mail.subject.include?("Master Hotwire")
+    # assert_equal "application/pdf; filename=master-hotwire.pdf", mail.attachments.first.content_type
   end
 
   def test_webhook_with_invalid_signature
