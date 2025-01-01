@@ -1,47 +1,55 @@
 # Master Hotwire website
 
-This repository contains the source code for the Master Hotwire book website.
+This repository contains the source code for the [Master Hotwire book website](https://masterhotwire.com/).
 
 It's built with Bridgetown.
 
-## Table of Contents
-
-- [Master Hotwire website](#master-hotwire-website)
-  - [Table of Contents](#table-of-contents)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Development](#development)
-    - [Commands](#commands)
-  - [Deployment](#deployment)
-  - [Contributing](#contributing)
-
 ## Prerequisites
 
-- [GCC](https://gcc.gnu.org/install/)
-- [Make](https://www.gnu.org/software/make/)
-- [Ruby](https://www.ruby-lang.org/en/downloads/)
-  - `>= 2.7`
-- [Bridgetown Gem](https://rubygems.org/gems/bridgetown)
-  - `gem install bridgetown -N`
-- [Node](https://nodejs.org)
-  - `>= 12`
-- [Yarn](https://yarnpkg.com)
+The project is set up with a Devcontainer so only a Docker Runtime is needed.
 
-## Install
-
-```sh
-cd bridgetown-site-folder
-bundle install && yarn install
-```
-> Learn more: [Bridgetown Getting Started Documentation](https://www.bridgetownrb.com/docs/).
+For example, Colima: https://github.com/abiosoft/colima
 
 ## Development
 
-To start your site in development mode, run `bin/bridgetown start` and navigate to [localhost:4000](https://localhost:4000/)!
+The intended development environment is a dev container.
+Make sure that you have the following defined in a .env file
+in root folder:
+```
+COMPOSE_FILE=.devcontainer/docker-compose.yml
+```
 
-Use a [theme](https://github.com/topics/bridgetown-theme) or add some [plugins](https://www.bridgetownrb.com/plugins/) to get started quickly.
+Then the project can be run in a dev container with: `docker-compose up`.
+
+Once it starts navigate to [localhost:4000](https://localhost:4000/)!
+
+### Paddle integration
+
+The docker-compose is set up by default with the sandbox account owned by me (Radan).
+
+If you need a new account create it at [sandbox-vendors.paddle.com](https://sandbox-vendors.paddle.com).
+
+#### Paddle API
+
+To be able to use Paddle API in general and `bin/bridgetown paddle:sync` custom task, you
+need to set the paddle API key. It's not committed to the repository, instead add it
+to `.env` file under `PADDLE_API_KEY` variable.
+
+#### Testing checkout flow
+
+To test the full checkout flow while developing locally you'll need
+to expose the app to the world with ngrok (make sure to have it installed).
+
+1. Start ngrok: `ngrok http 4000`.
+2. Take the new ngrok endpoint and create a webhook in a paddle sandbox account (events: `customer.created`, `transaction.paid`).
+3. Add the webhook secret to the `.env` file under `PADDLE_WEBHOOK_SECRET_KEY` variable.
+  This can be found in paddle Notifications UI, when editing a Webhook
+  ([sandbox link](https://sandbox-vendors.paddle.com/notifications-v2).
 
 ### Commands
+
+Examples of some bridgetown commands.
+Prefix them with `docker-compose run app` to run inside the devcontainer.
 
 ```sh
 # running locally
@@ -58,17 +66,6 @@ bin/bridgetown console
 
 ## Deployment
 
-You can deploy Bridgetown sites on hosts like Render or Vercel as well as traditional web servers by simply building and copying the output folder to your HTML root.
+The project is currently being deployed on Github pages (primary deployment)
+and on Fly.io (secondary deployment for the API).
 
-> Read the [Bridgetown Deployment Documentation](https://www.bridgetownrb.com/docs/deployment) for more information.
-
-## Contributing
-
-If repo is on GitHub:
-
-1. Fork it
-2. Clone the fork using `git clone` to your local development machine.
-3. Create your feature branch (`git checkout -b my-new-feature`)
-4. Commit your changes (`git commit -am 'Add some feature'`)
-5. Push to the branch (`git push origin my-new-feature`)
-6. Create a new Pull Request
