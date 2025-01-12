@@ -37,7 +37,9 @@ class Mailer < Roda
       r.mail "purchase" do
         subject "Your copy of Master Hotwire is here!"
         text_part render("purchase.txt")
-        add_file "src/master-hotwire.pdf"
+        if File.exist?(ENV["BOOK_PDF_PATH"])
+          add_file(filename: "master-hotwire.pdf", content: File.read(ENV["BOOK_PDF_PATH"]))
+        end
       end
     end
   end

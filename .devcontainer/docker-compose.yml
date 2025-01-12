@@ -17,6 +17,7 @@ services:
       BUNDLE_PATH: vendor/bundle
       PADDLE_TOKEN: "test_bf4cb5669c6c60cc8ccca5e7421"
       PADDLE_PRICE_ID: "pri_01ja5tas8g0pskcekk8y3h81vw"
+      BOOK_PDF_PATH: "src/master-hotwire-sample.pdf"
       PORT: 4000
     ports:
       - "4000:4000"
