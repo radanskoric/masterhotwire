@@ -31,5 +31,5 @@ log_formatter do |msg|
 end
 
 before_fork do
-  Sequel::DATABASES.each(&:disconnect)
+  Bridgetown.db.disconnect if defined?(Bridgetown) && Bridgetown.respond_to?(:db)
 end

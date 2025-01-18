@@ -1,0 +1,43 @@
+---<%
+render_with do
+  layout :page
+  title "Sign Up"
+end
+%>---
+
+<% if rodauth.logged_in? %>
+  <p style="text-align:center">
+    It looks like you're already signed in. Would you like to <a href="/account/profile">view your profile?</a>
+  </p>
+<% end %>
+
+<article>
+  <%= render Forms::Account.new(url: rodauth.create_account_path, class: "centered") do |f| %>
+    <%= render "form_errors" %>
+    <%=
+      render f.field(
+        rodauth.login_param,
+        value: r.params[rodauth.login_param],
+        aria: { invalid: rodauth.field_error(rodauth.login_param).present? }
+      )
+    %>
+    <%=
+      render f.field(
+        :first_name,
+        value: r.params[:first_name]
+      )
+    %>
+    <%=
+      render f.field(
+        rodauth.password_param,
+        aria: { invalid: rodauth.field_error(rodauth.password_param).present? }
+      ) %>
+    <%=
+      render f.field(:submit, label: rodauth.create_account_button)
+    %>
+  <% end %>
+</article>
+
+<% unless rodauth.logged_in? %>
+  <p style="text-align:center">Have an account already? <a href="/auth/login">Sign in here</a>.</p>
+<% end %>

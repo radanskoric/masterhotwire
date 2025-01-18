@@ -19,5 +19,6 @@ services:
       PADDLE_PRICE_ID: "pri_01ja5tas8g0pskcekk8y3h81vw"
       BOOK_PDF_PATH: "src/master-hotwire-sample.pdf"
       PORT: 4000
+      RODA_SECRET_KEY: e41434b6da34f699a7a795e8bb727c9f036dd39dfaadccced2fb46658ecc76de71ed645aa6d3183d3d599b0a223a0457fb94234b31cecccb9b7171b078e3d18d
     ports:
       - "4000:4000"

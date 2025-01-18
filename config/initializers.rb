@@ -38,8 +38,8 @@ Bridgetown.configure do |config|
 
   # Uncomment to use Bridgetown SSR (aka dynamic rendering of content via Roda):
   #
-  # init :ssr
-  #
+  init :ssr
+  init :"bridgetown-routes"
 
   # Uncomment to use file-based dynamic template routing via Roda (make sure you
   # uncomment the gem dependency in your `Gemfile` as well):
@@ -60,9 +60,48 @@ Bridgetown.configure do |config|
   # For more documentation on how to configure your site using this initializers file,
   # visit: https://edge.bridgetownrb.com/docs/configuration/initializers/
 
+  database_uri ENV.fetch("DATABASE_URL", "sqlite://db/storage/#{Bridgetown.env}.db")
+
+  except :sequel_tasks do
+    init :bridgetown_sequel do
+      connection_options do
+        extensions [:pretty_table]
+        logger Logger.new("log/sql.log")
+      end
+    end
+  end
+
   except :static do
     init :paddle,
       api_key: ENV["PADDLE_API_KEY"],
       environment: ENV["PADDLE_LIVE"] == "true" ? :production : :sandbox
+  end
+
+  only :server do
+    init :mail, password: ENV["AMAZON_SES_PASSWORD"]
+  end
+
+  init :lifeform
+
+  init :authtown do
+    # Defaults, uncomment to modify:
+    #
+    # account_landing_page "/account/profile"
+    # user_class_resolver -> { User }
+    # user_name_field :first_name
+
+    rodauth_config -> do
+      email_from "Your Name <youremail@example.com>"
+
+      reset_password_email_body do
+        "Howdy! You or somebody requested a password reset for your account.\n" \
+          "If that's legit, here's the link:\n#{reset_password_email_link}\n\n" \
+          "Otherwise, you may safely ignore this message.\n\nThanks!\n–You @ Company"
+      end
+
+      enable :http_basic_auth if Bridgetown.env.test?
+
+      # You can define additional options here as provided by Rodauth directly
+    end
   end
 end

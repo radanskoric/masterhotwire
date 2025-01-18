@@ -24,6 +24,7 @@ end
 class RodaApp < Roda
   use Sentry::Rack::CaptureExceptions
   plugin :bridgetown_server
+  plugin :bridgetown_routes
   plugin :json_parser
   plugin :request_headers
   plugin :paddle, webhook_secret_key: ENV["PADDLE_WEBHOOK_SECRET_KEY"]

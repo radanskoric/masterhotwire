@@ -19,7 +19,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # If you need to upgrade/switch Bridgetown versions, change the line below
 # and then run `bundle update bridgetown`
-gem "bridgetown", "~> 1.3.4"
+gem "bridgetown", "~> 2.0.0.beta4"
 gem "dotenv"
 
 # Uncomment to add file-based dynamic routing to your project:
@@ -29,8 +29,10 @@ gem "dotenv"
 # (you can optionally limit this to the "development" group)
 gem "puma", "< 7"
 
-gem "sequel", github: "radanskoric/sequel", branch: "support-wal-mode-on-sqlite"
+gem "bridgetown_sequel", "~> 1.1"
 gem "sqlite3"
+
+gem "authtown", "~> 0.5.0"
 
 gem "mail"
 
@@ -54,3 +56,7 @@ group :test do
 
   gem "database_cleaner-sequel"
 end
+
+gem "lifeform", "~> 0.11.0"
+
+gem "bridgetown-routes", "2.0.0.beta4"
