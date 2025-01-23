@@ -29,3 +29,9 @@
   title: software developer
   quote: >
     This book is an excellent companion for implementing real-world applications with Hotwire. Unlike many entry-level tutorials that quickly jump into "draw the rest of the owl" territory, Radan guides us through incrementally more complex problems, demonstrating how to tackle them with great pedagogy. As a bonus, each step includes a detailed paragraph explaining the framework's internals and why everything works as it does. I highly recommend Master Hotwire to any Ruby on Rails developer looking to enhance their application with Hotwire.
+
+- name: Tony Franco
+  link: https://x.com/anthony_franco
+  title: tech entrepreneur
+  quote: >
+    I struggled to find current and reliable tutorials on Hotwire, and this book was exactly what I needed. The practical tips and hands-on approach helped me overcome my biggest development hurdles. Highly recommended for anyone looking to supercharge their Hotwire skills.
