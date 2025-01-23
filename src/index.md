@@ -183,11 +183,11 @@ Wondering what's inside? Here's the list of chapter titles:
 
 ## Build that side-project in record time
 
-If your day job is a huge legacy application, switching to Hotwire might seem like an impossible task. And while the course also has a special section on introducing Hotwire to a legacy application, it's also perfect for launching a side-project.
+If your day job is a huge legacy application, switching to Hotwire might seem like an impossible task. And while the book also has a special section on introducing Hotwire to a legacy application, it's also perfect for launching a side-project.
 
 Hotwire and Rails are arguably the most productive combination for launching an application from scratch.
 
-The course is structured so that you can immediately start building an application and then enhance it as you learn new concepts. Even if you only have a few hours a week that will be enough to work through the course in a few weeks and build the first version of your application along side it.
+The book is structured so that you can immediately start building an application and then enhance it as you learn new concepts. Even if you only have a few hours a week that will be enough to work through the book in a few weeks and build the first version of your application along side it.
 
 ## Frequently Asked Questions
 
