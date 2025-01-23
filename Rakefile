@@ -62,46 +62,6 @@ end
 #   end
 # end
 
-namespace :db do
-  desc "Create a new migration file"
-  task :migration, [:name] do |_t, args|
-    name = args[:name] || "new_migration"
-    timestamp = Time.now.strftime("%Y%m%d%H%M%S")
-    file = "db/migrations/#{timestamp}_#{name}.rb"
-    File.write(file, <<~MIGRATION)
-      Sequel.migration do
-        change do
-          # Your code goes here
-        end
-      end
-    MIGRATION
-    puts "Created #{file}"
-  end
-
-  desc "Run migrations"
-  task :migrate, [:version] do |_t, args|
-    require "sequel/core"
-    Sequel.extension :migration
-    version = args[:version].to_i if args[:version]
-    Sequel.connect(ENV.fetch("DATABASE_URL")) do |db|
-      migrator = Sequel::TimestampMigrator.new(
-        db,
-        "db/migrations",
-        target: version,
-        allow_missing_migration_files: true,
-        use_transactions: true
-      )
-      if migrator.is_current?
-        puts "Database is up to date, no migration needed."
-      else
-        puts "Migrating database ..."
-        migrator.run
-        puts "Database migrated."
-      end
-    end
-  end
-end
-
 namespace :paddle do
   desc "Sync the list of customers and their purchase status from Paddle"
   task sync: :environment do
