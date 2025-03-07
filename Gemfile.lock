@@ -121,9 +121,10 @@ GEM
       rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    lifeform (0.11.0)
-      activesupport (>= 7.0)
-      phlex (>= 1.7)
+    lifeform (0.15.0)
+      hash_with_dot_access (>= 1.2)
+      sequel (>= 5.72)
+      streamlined (>= 0.2.0)
       zeitwerk (~> 2.5)
     liquid (5.4.0)
     listen (3.9.0)
@@ -163,7 +164,6 @@ GEM
     paddle (2.7.1)
       faraday (~> 2.11)
       ostruct (~> 0.6.0)
-    phlex (1.11.0)
     psych (5.2.1)
       date
       stringio
@@ -253,7 +253,7 @@ DEPENDENCIES
   database_cleaner-sequel
   debug
   dotenv
-  lifeform (~> 0.11.0)
+  lifeform (~> 0.15)
   mail
   minitest
   minitest-reporters

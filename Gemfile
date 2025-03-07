@@ -57,6 +57,6 @@ group :test do
   gem "database_cleaner-sequel"
 end
 
-gem "lifeform", "~> 0.11.0"
+gem "lifeform", "~> 0.15"
 
 gem "bridgetown-routes", "2.0.0.beta4"
