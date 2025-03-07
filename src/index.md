@@ -148,7 +148,12 @@ You will gain an accurate mental model and understanding of Hotwire. You will b
     <div class="review-box">
       <blockquote><%= review[:quote] %></blockquote>
       <div class="reviewer">
-        <a href="<%= review[:link] %>" target="_blank" rel="noopener"><%= review[:name] %></a><span class="reviewer-title">, <%= review[:title] %></span>
+        <% if review[:link] %>
+          <a href="<%= review[:link] %>" target="_blank" rel="noopener"><%= review[:name] %></a>
+        <% else %>
+          <%= review[:name] %>
+        <% end %>
+        <span class="reviewer-title">, <%= review[:title] %></span>
       </div>
     </div>
   <% end %>
