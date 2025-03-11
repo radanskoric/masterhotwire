@@ -13,6 +13,7 @@ end
 
 <article>
   <%= render Forms::Account.new(url: rodauth.create_account_path, class: "centered") do |f| %>
+    <%= render "form_errors" %>
     <%=
       render f.field(
         rodauth.login_param,
@@ -22,7 +23,7 @@ end
     %>
     <%=
       render f.field(
-        :name,
+        :first_name,
         value: r.params[:first_name]
       )
     %>

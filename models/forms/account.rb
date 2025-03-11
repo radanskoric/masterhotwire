@@ -9,7 +9,7 @@ module Forms
             required: true,
             autocomplete: "username",
             autofocus: true
-      field :name,
+      field :first_name,
             label: "Your Name",
             autocomplete: "name",
             required: true

@@ -1,0 +1,16 @@
+<form-errors>
+  <p aria-live="assertive">
+    <% if flash[:error] %>
+      <%= flash[:error] %>:
+    <% end %>
+    <br/>
+    <small>
+      <% if rodauth.field_error(rodauth.login_param) %>
+        <%= rodauth.field_error(rodauth.login_param) %>
+      <% end %>
+      <% if rodauth.field_error(rodauth.password_param) %>
+        <%= rodauth.field_error(rodauth.password_param) %>
+      <% end %>
+    </small>
+  </p>
+</form-errors>

@@ -1,0 +1,25 @@
+---<%
+rodauth.require_authentication # always include this before logged-in only routes
+
+render_with do
+  layout :page
+  title "Your Account"
+end
+%>---
+
+
+<%= markdownify do %>
+
+Welcome back, **<%= current_user.first_name %>**.
+
+(other content here)
+
+<% end %>
+
+<hr />
+
+<form method="post" action="<%= rodauth.logout_path %>">
+  <%== csrf_tag(rodauth.logout_path) %>
+  <p>You’re logged in as: <strong><%= current_user.email %></strong>.</p>
+  <button type="submit"><%= rodauth.logout_button %></button>
+</form>
