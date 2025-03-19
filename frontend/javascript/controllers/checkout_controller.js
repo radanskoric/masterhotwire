@@ -28,5 +28,6 @@ export default class extends Controller {
         }
       ]
     });
+    plausible("Checkout button clicked");
   }
 }
