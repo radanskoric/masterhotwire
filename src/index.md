@@ -176,15 +176,21 @@ Wondering what's inside? Here's the list of chapter titles:
 - 1.9. Improve UX with Stimulus
 - 1.10. Stimulus being different from other frontend frameworks helps when a Hotwire application grows
 - 1.11. Exercise - Allow creating tickets directly in the columns
-- 2.0. Part II: Where you learn how to package a web app into native mobile apps with Hotwire Native *(coming soon)*
-  - *details coming soon*
+- 2.0. Part II: Where you learn how to package a web app into native mobile apps with Hotwire Native *(in beta reading)*
+- 2.1. History of Hotwire Native *(in beta reading)*
+- 2.2. Mobile apps UI is different from the web *(in beta reading)*
+- 2.3. Create a new Hotwire Native application *(in beta reading)*
+- 2.4. Enhance the application without custom native code *(in beta reading)*
+- 2.5. Customise mobile screens with Path Configuration *(in beta reading)*
+- 2.6. Utilise Bridge Components *(in beta reading)*
+- 2.7. Publish native applications *(in beta reading)*
+- 2.8. Where to go from here? *(in beta reading)*
 - 3.0. Part III: Where you learn how to take it further *(coming soon)*
 - 3.1. Understand how Turbo manages browsing history *(coming soon)*
 - 3.2. Advanced Stimulus usage *(coming soon)*
-- 3.3. Hotwire and SPA frameworks *(coming soon)*
-- 3.4. How to load test Turbo powered applications *(coming soon)*
-- 3.5. How to debug Hotwire applications *(coming soon)*
-- 3.6. Adding Turbo to a legacy application *(coming soon)*
+- 3.3. How to load test Turbo powered applications *(coming soon)*
+- 3.4. How to debug Hotwire applications *(coming soon)*
+- 3.5. Adding Turbo to a legacy application *(coming soon)*
 
 ## Build that side-project in record time
 
