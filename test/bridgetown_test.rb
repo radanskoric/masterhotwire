@@ -2,6 +2,8 @@
 
 # This file can be required by project test suites to set up the Minitest environment
 
+ENV["BRIDGETOWN_ENV"] = "test"
+
 require "bridgetown"
 
 ENV["BRIDGETOWN_NO_BUNDLER_REQUIRE"] = nil

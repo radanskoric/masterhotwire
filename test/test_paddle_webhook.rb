@@ -1,4 +1,4 @@
-require "minitest_helper"
+require_relative "minitest_helper"
 
 class TestPaddleWebhook < Minitest::Test
   include Rack::Test::Methods

@@ -1,5 +1,5 @@
 ARG RUBY_VERSION=3.4
-FROM ruby:$RUBY_VERSION-slim as base
+FROM ruby:$RUBY_VERSION as base
 
 ENV VOLTA_HOME=/usr/local
 
