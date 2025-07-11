@@ -25,6 +25,17 @@
   flex-direction: column;
 }
 
+.center {
+  text-align: center;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
   /* Create grid layout for tablets and larger screens */
   .reviews {

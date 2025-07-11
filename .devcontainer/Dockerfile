@@ -1,4 +1,4 @@
-FROM ruby:3.3.6
+FROM ruby:3.4
 
 # Install all of the preqeusities to actually building the app.
 RUN apt-get update \

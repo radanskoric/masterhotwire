@@ -16,8 +16,13 @@ paddle: true
 
 
 # Master Hotwire
+{: .mb-0}
+
+![Boy hands holding two wires with a bright yellow spark between them](/images/hotwire-in-hands.png){: width="60%"}
+{: .center.mt-0.mb-0}
 
 ## Build Modern Web Apps with Rails Simplicity
+{: .mt-0}
 
 *An e-book for experienced Rails developers to quickly get up to speed with Hotwire.*
 
@@ -165,32 +170,32 @@ Wondering what's inside? Here's the list of chapter titles:
 
 - Preface
 - 1.0. Part I - Where you learn how to implement a Hotwire web application
-- 1.1. Start with a plain HTML application
-- 1.2. Understand Turbo Drive enhancements
-- 1.3. Enjoy the magic of link prefetching
-- 1.4. Upgrade with Turbo Frames
-- 1.5. Intermezzo - Significance of progressive enhancement for HTML-over-the-wire
-- 1.6. Fine grained control with Turbo Streams
-- 1.7. Introduce Turbo Morphing
-- 1.8. Make the application collaborative with ActionCable
-- 1.9. Improve UX with Stimulus
-- 1.10. Stimulus being different from other frontend frameworks helps when a Hotwire application grows
-- 1.11. Exercise - Allow creating tickets directly in the columns
+  - 1.1. Start with a plain HTML application
+  - 1.2. Understand Turbo Drive enhancements
+  - 1.3. Enjoy the magic of link prefetching
+  - 1.4. Upgrade with Turbo Frames
+  - 1.5. Intermezzo - Significance of progressive enhancement for HTML-over-the-wire
+  - 1.6. Fine grained control with Turbo Streams
+  - 1.7. Introduce Turbo Morphing
+  - 1.8. Make the application collaborative with ActionCable
+  - 1.9. Improve UX with Stimulus
+  - 1.10. Stimulus being different from other frontend frameworks helps when a Hotwire application grows
+  - 1.11. Exercise - Allow creating tickets directly in the columns
 - 2.0. Part II: Where you learn how to package a web app into native mobile apps with Hotwire Native *(in beta reading)*
-- 2.1. History of Hotwire Native *(in beta reading)*
-- 2.2. Mobile apps UI is different from the web *(in beta reading)*
-- 2.3. Create a new Hotwire Native application *(in beta reading)*
-- 2.4. Enhance the application without custom native code *(in beta reading)*
-- 2.5. Customise mobile screens with Path Configuration *(in beta reading)*
-- 2.6. Utilise Bridge Components *(in beta reading)*
-- 2.7. Publish native applications *(in beta reading)*
-- 2.8. Where to go from here? *(in beta reading)*
+  - 2.1. History of Hotwire Native *(in beta reading)*
+  - 2.2. Mobile apps UI is different from the web *(in beta reading)*
+  - 2.3. Create a new Hotwire Native application *(in beta reading)*
+  - 2.4. Enhance the application without custom native code *(in beta reading)*
+  - 2.5. Customise mobile screens with Path Configuration *(in beta reading)*
+  - 2.6. Utilise Bridge Components *(in beta reading)*
+  - 2.7. Publish native applications *(in beta reading)*
+  - 2.8. Where to go from here? *(in beta reading)*
 - 3.0. Part III: Where you learn how to take it further *(coming soon)*
-- 3.1. Understand how Turbo manages browsing history *(coming soon)*
-- 3.2. Advanced Stimulus usage *(coming soon)*
-- 3.3. How to load test Turbo powered applications *(coming soon)*
-- 3.4. How to debug Hotwire applications *(coming soon)*
-- 3.5. Adding Turbo to a legacy application *(coming soon)*
+  - 3.1. How to debug Hotwire applications *(coming soon)*
+  - 3.2. Understand how Turbo manages browsing history *(coming soon)*
+  - 3.3. Advanced Stimulus usage *(coming soon)*
+  - 3.4. How to load test Turbo powered applications *(coming soon)*
+  - 3.5. Adding Turbo to a legacy application *(coming soon)*
 
 ## Build that side-project in record time
 
