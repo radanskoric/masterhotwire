@@ -60,6 +60,8 @@ Bridgetown.configure do |config|
   # For more documentation on how to configure your site using this initializers file,
   # visit: https://edge.bridgetownrb.com/docs/configuration/initializers/
 
+  init :"bridgetown-seo-tag"
+
   except :static do
     init :paddle,
       api_key: ENV["PADDLE_API_KEY"],

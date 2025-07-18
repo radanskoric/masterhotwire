@@ -5,6 +5,8 @@
 
 <meta name="description" content="<%= metadata.description %>" />
 
+<%= seo title: false %>
+
 <link rel="stylesheet" href="<%= webpack_path :css %>" data-turbo-track="reload" />
 <script src="<%= webpack_path :js %>" data-turbo-track="reload" defer></script>
 <%= live_reload_dev_js %>

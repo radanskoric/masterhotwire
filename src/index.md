@@ -1,6 +1,7 @@
 ---
 layout: default
 paddle: true
+image: /images/hotwire-in-hands.png
 ---
 
 <script async data-uid="feaa96bc97" src="https://thoughtful-producer-2834.kit.com/feaa96bc97/index.js"></script>
