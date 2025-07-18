@@ -144,6 +144,18 @@ It's condensed experienced that you are able to consume in a short amount of tim
 
 You will gain an accurate mental model and understanding of Hotwire. You will be able to connect it to the body of knowledge and experience you already posses to develop new or introduce Hotwire to existing applications with complete confidence.
 
+### Is Hotwire Native really a shortcut to launching a native mobile app?
+
+Hotwire Native has recently improved **in strides** but it's still hard to tell if its a viable option for your project.
+
+For many projects it really is a shortcut to a native app that is so fast it will feel like you're cheating. While other teams are recreating their web apps using mobile technology, you'll be able to package and ship your web app as a native app **in a fraction of the time**. And once you understand how to do it properly, users will not be able to tell the difference.
+
+However, it's not the right fit for every project. Thankfully, the same deep understanding of how it works and how to use it properly will give you a clear understanding of when to use it.
+
+This is exactly what's waiting in Part II of "Master Hotwire". And it doesn't require you to spend a lot of time learning native development. When you finish Part II you will understand how it works and you'll be able to build and launch a native app mostly using your existing web development skills. For a lot of projects this is more than enough. And if you need to push it further, you'll be able to use any native development resources. Hotwire Native enables that and "Master Hotwire" gives you the needed understanding.
+
+*The Hotwire Native content is launching next Tuesday, July 22nd. You will automatically get it if you purchase now.*
+
 <%= render "cta" %>
 
 ## What readers are saying
