@@ -9,6 +9,7 @@ tmp
 # Database
 db/storage/*.db
 !db/storage/development.db
+production.sqlite3
 
 # Logs
 log/*.log
