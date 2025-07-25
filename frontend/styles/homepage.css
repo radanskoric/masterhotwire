@@ -110,9 +110,34 @@
   box-shadow: none;
 }
 
-.buy-button-top-right {
+.top-right-container {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sales-text {
+  text-align: right;
+  line-height: 1.2;
+}
+
+.sales-number {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 0.1rem;
+}
+
+.sales-label {
+  font-size: 0.85rem;
+  color: var(--dimmed-color);
+  font-weight: 500;
+}
+
+.buy-button-top-right {
+  position: static;
   padding: 0.25rem 0.75rem;
 }
