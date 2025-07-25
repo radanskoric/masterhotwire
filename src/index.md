@@ -31,7 +31,7 @@ image: /images/hotwire-in-hands.png
 ## Build Modern Web Apps with Rails Simplicity
 {: .mt-0}
 
-*An e-book for experienced Rails developers to quickly get up to speed with Hotwire.*
+*An e-book for experienced Rails developers to quickly get up to speed with Hotwire and Hotwire Native.*
 
 Written by [Radan Skorić](https://radanskoric.com).
 
