@@ -232,7 +232,7 @@ Oh no! Send an email to [me@radanskoric.com](mailto:me@radanskoric.com).
 
 **How much will the book cost?**
 
-The book is currently in Beta and selling for <b>€28</b>. For that price you will receive the fully completed part I (see list of chapters above for details), and lifetime access to all future versions.
+The book is currently in Beta and selling for <b>€38</b>. For that price you will receive the fully completed part I and II (see list of chapters above for details), and lifetime access to all future versions and updates.
 
 **What is included in the beta version purchase?**
 
