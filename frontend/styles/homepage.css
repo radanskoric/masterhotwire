@@ -57,6 +57,12 @@
   line-height: 1.6;
 }
 
+.review-source {
+  font-size: 0.9rem;
+  color: var(--dimmed-color);
+  text-align: right;
+}
+
 .reviewer {
   margin-top: auto;
   text-align: right;

@@ -167,21 +167,7 @@ This is exactly what's waiting in Part II of "Master Hotwire". And it doesn't re
 
 ## What readers are saying
 
-<div class="reviews">
-  <% site.data.reviews.each do |review| %>
-    <div class="review-box">
-      <blockquote><%= review[:quote] %></blockquote>
-      <div class="reviewer">
-        <% if review[:link] %>
-          <a href="<%= review[:link] %>" target="_blank" rel="noopener"><%= review[:name] %></a>
-        <% else %>
-          <%= review[:name] %>
-        <% end %>
-        <span class="reviewer-title">, <%= review[:title] %></span>
-      </div>
-    </div>
-  <% end %>
-</div>
+<%= render "reviews" %>
 
 ## List of chapters
 

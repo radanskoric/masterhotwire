@@ -1,3 +1,11 @@
+- name: Luís Miguel
+  link: https://x.com/lmiguelside
+  title: developer & entrepreneur
+  source: X post
+  source_link: https://x.com/lmiguelside/status/1957158098516295749
+  quote: >
+    I bought your book as soon as you mentioned it in the newsletter, and I went through it really quickly. I think it is really easy to read and understand!
+
 - name: Ian Hall
   link: https://www.linkedin.com/in/ian-hall-646a107/
   title: software developer
@@ -11,6 +19,12 @@
   title: software developer
   quote: >
     Having worked alongside Radan for many years, I can vouch that this book is exactly what you'd expect from him - breaking down Turbo Drive, Frames, Streams, and all that Hotwire goodness in that annoyingly clear way he does. I've been using the Hotwire stack since its release, yet I still learned a ton of new insights and practical approaches.
+
+- name: Tony Franco
+  link: https://x.com/anthony_franco
+  title: tech entrepreneur
+  quote: >
+    I struggled to find current and reliable tutorials on Hotwire, and this book was exactly what I needed. The practical tips and hands-on approach helped me overcome my biggest development hurdles. Highly recommended for anyone looking to supercharge their Hotwire skills.
 
 - name: Tilmann Singer
   link: https://github.com/til/
@@ -29,12 +43,6 @@
   title: software developer
   quote: >
     This book is an excellent companion for implementing real-world applications with Hotwire. Unlike many entry-level tutorials that quickly jump into "draw the rest of the owl" territory, Radan guides us through incrementally more complex problems, demonstrating how to tackle them with great pedagogy. As a bonus, each step includes a detailed paragraph explaining the framework's internals and why everything works as it does. I highly recommend Master Hotwire to any Ruby on Rails developer looking to enhance their application with Hotwire.
-
-- name: Tony Franco
-  link: https://x.com/anthony_franco
-  title: tech entrepreneur
-  quote: >
-    I struggled to find current and reliable tutorials on Hotwire, and this book was exactly what I needed. The practical tips and hands-on approach helped me overcome my biggest development hurdles. Highly recommended for anyone looking to supercharge their Hotwire skills.
 
 - name: Lukas W.
   link:

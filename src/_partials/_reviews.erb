@@ -1,0 +1,20 @@
+<div class="reviews">
+  <% site.data.reviews.each do |review| %>
+    <div class="review-box">
+      <blockquote><%= review[:quote] %></blockquote>
+      <% if review[:source] %>
+        <div class="review-source">
+          Source: <a href="<%= review[:source_link] %>" target="_blank" rel="noopener"><%= review[:source] %></a>
+        </div>
+      <% end %>
+      <div class="reviewer">
+        <% if review[:link] %>
+          <a href="<%= review[:link] %>" target="_blank" rel="noopener"><%= review[:name] %></a>
+        <% else %>
+          <%= review[:name] %>
+        <% end %>
+        <span class="reviewer-title">, <%= review[:title] %></span>
+      </div>
+    </div>
+  <% end %>
+</div>
