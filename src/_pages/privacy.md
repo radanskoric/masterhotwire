@@ -55,7 +55,11 @@ MasterHotwire follows a standard procedure of using log files. These files log v
 
 ### Cookies
 
-MasterHotwire does not use any cookies. The website only contains publicly accessible content and the analytics solution used, Plausible, does not use any cookies.
+Before you have purchased the book, MasterHotwire does not use any cookies. The website only contains publicly accessible content and the analytics solution used, Plausible, does not use any cookies.
+
+Once you have purchased the book you have the option of logging into the web version of the book part of the website, accessible at [book.masterhotwire.com](https://book.masterhotwire.com). Like any other website with a login, the web version of the book uses 'cookies.' These cookies are used solely to store information about your account to remember you and you don't have to sign in every time.
+
+For more general information on cookies, please read ["What Are Cookies"](https://www.termsfeed.com/blog/cookies/).
 
 ### CCPA Privacy Rights (Do Not Sell My Personal Information)
 
