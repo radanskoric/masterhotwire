@@ -1,4 +1,4 @@
-- name: Rosa
+- name: Rosa Gutiérrez
   link: https://bsky.app/profile/rosa.codes
   title: Principal programmer, 37signals
   source: Bluesky
@@ -35,6 +35,12 @@
   quote: >
     I struggled to find current and reliable tutorials on Hotwire, and this book was exactly what I needed. The practical tips and hands-on approach helped me overcome my biggest development hurdles. Highly recommended for anyone looking to supercharge their Hotwire skills.
 
+- name: Petr Reichl
+  link: https://x.com/meap
+  title: software developer
+  quote: >
+    I recently purchased it and am reading it right now - very quickly - because it’s so well-written and engaging.
+
 - name: Tilmann Singer
   link: https://github.com/til/
   title: software developer
@@ -52,15 +58,3 @@
   title: software developer
   quote: >
     This book is an excellent companion for implementing real-world applications with Hotwire. Unlike many entry-level tutorials that quickly jump into "draw the rest of the owl" territory, Radan guides us through incrementally more complex problems, demonstrating how to tackle them with great pedagogy. As a bonus, each step includes a detailed paragraph explaining the framework's internals and why everything works as it does. I highly recommend Master Hotwire to any Ruby on Rails developer looking to enhance their application with Hotwire.
-
-- name: Lukas W.
-  link:
-  title: software developer
-  quote: >
-    As a seasoned Rails developer, who was absent from the Rails world the past ~6 years, it’s a terrific resource that helped me get started.
-
-- name: Petr Reichl
-  link: https://x.com/meap
-  title: software developer
-  quote: >
-    I recently purchased it and am reading it right now - very quickly - because it’s so well-written and engaging.
