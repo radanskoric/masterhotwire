@@ -1,3 +1,12 @@
+- name: Rosa
+  link: https://bsky.app/profile/rosa.codes
+  title: Principal programmer, 37signals
+  source: Bluesky
+  source_link: https://bsky.app/profile/rosa.codes/post/3ly44gf3qrk2w
+  quote: >
+    This year I've learnt a lot about Hotwire, and my favourite resources for that, besides reading the source code of the various libraries, have been Radan's Master Hotwire book, and
+    Joe Masilotti's Hotwire Native book! really recommend both!
+
 - name: Luís Miguel
   link: https://x.com/lmiguelside
   title: developer & entrepreneur
