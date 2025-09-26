@@ -228,9 +228,9 @@ The book is currently in Beta and selling for <b>€38</b>. For that price you w
 
 **What is included in the beta version purchase?**
 
-Immediately upon purchase you will receive a PDF of the current version of the book. The list of chapters above outlines exactly what is currently finished.
+Immediately upon purchase you will receive access to the always up to date Web and PDF versions of the book. The list of chapters above outlines exactly what is currently finished.
 
-You will also receive all future updates to the PDF version and all future format additions. A website version is in the process of being created and an epub version is planned in the future. You will get all of that included for the beta price and will get life time access to all updates to the book.
+You will also receive all future updates to the book and all future format additions. You will get all of that included for the beta price and will get life time access to all updates to the book.
 
 **Is there a money back guarantee?**
 
