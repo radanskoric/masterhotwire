@@ -4,11 +4,13 @@ paddle: true
 image: /images/hotwire-in-hands.png
 ---
 
+<% sales_count = 250 %>
+
 <script async data-uid="feaa96bc97" src="https://thoughtful-producer-2834.kit.com/feaa96bc97/index.js"></script>
 
 <div class="top-right-container">
   <div class="sales-text">
-    <div class="sales-number">200+</div>
+    <div class="sales-number"><%= sales_count %>+</div>
     <div class="sales-label">copies sold</div>
   </div>
   <a
@@ -19,6 +21,10 @@ image: /images/hotwire-in-hands.png
     data-checkout-price-id-value="<%= ENV["PADDLE_PRICE_ID"] %>">
     <b>Buy now</b>
   </a>
+</div>
+
+<div class="top-left-container">
+  <a href="https://book.masterhotwire.com" class="sign-in-link">reader sign-in</a>
 </div>
 
 
@@ -161,7 +167,7 @@ However, it's not the right fit for every project. Thankfully, the same deep und
 
 This is exactly what's waiting in Part II of "Master Hotwire". And it doesn't require you to spend a lot of time learning native development. When you finish Part II you will understand how it works and you'll be able to build and launch a native app mostly using your existing web development skills. For a lot of projects this is more than enough. And if you need to push it further, you'll be able to use any native development resources. Hotwire Native enables that and "Master Hotwire" gives you the needed understanding.
 
-*The Hotwire Native content is launching next Tuesday, July 22nd. You will automatically get it if you purchase now.*
+<div class="sales-in-text"><%= sales_count %>+ copies sold</div>
 
 <%= render "cta" %>
 

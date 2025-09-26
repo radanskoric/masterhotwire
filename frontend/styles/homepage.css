@@ -125,13 +125,22 @@
   gap: 0.5rem;
 }
 
+.top-left-container {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .sales-text {
   text-align: right;
   line-height: 1.2;
 }
 
 .sales-number {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--heading-color);
   margin-bottom: 0.1rem;
@@ -143,7 +152,20 @@
   font-weight: 500;
 }
 
+.sales-in-text {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem;
+}
+
 .buy-button-top-right {
   position: static;
   padding: 0.25rem 0.75rem;
 }
+
+.sign-in-link {
+  font-size: 0.8rem;
+  color: var(--dimmed-color);
+}
+
