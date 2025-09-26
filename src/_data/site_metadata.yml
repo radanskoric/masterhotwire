@@ -5,7 +5,7 @@
 # in the templates via {{ site.metadata.myvariable }}.
 
 title: Master Hotwire
-tagline: Master Hotwire to Build Modern Web Apps with Rails Simplicity
+tagline: Build Modern Web Apps with Rails Simplicity
 email: me@radanskoric.com
 description: >-
-  "Master Hotwire" is structured to help you build a strong mental model of Hotwire. It combines explanations of functionality with hands-on coding. The book guides you through building a collaborative Kanban board in such a way that you immediately use every new concept you learn. And by targeting experienced developers I was able to make it short, so you can finish it quickly.
+  "Master Hotwire" is structured to help you build a strong mental model of Hotwire. It combines explanations of functionality with hands-on coding. The book guides you through building a collaborative Kanban board in such a way that you immediately use every new concept you learn. And by targeting experienced developers I was able to make it short, so you can finish it quickly. It is the fastest way for experienced developers to learn Hotwire.
