@@ -205,7 +205,7 @@ Wondering what's inside? Here's the list of chapter titles:
   - 3.1. How to debug Hotwire applications *(coming soon)*
   - 3.2. Understand how Turbo manages browsing history *(coming soon)*
   - 3.3. Advanced Stimulus usage *(coming soon)*
-  - 3.4. How to load test Turbo powered applications *(coming soon)*
+  - 3.4. A primer on system testing Hotwire apps *(coming soon)*
   - 3.5. Adding Turbo to a legacy application *(coming soon)*
 
 ## Build that side-project in record time
