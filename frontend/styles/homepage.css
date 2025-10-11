@@ -2,8 +2,8 @@
   -webkit-mask-image: linear-gradient(
     to bottom,
     transparent 0%,
-    black 20%,
-    black 80%,
+    black 18%,
+    black 82%,
     transparent 100%
   );
   mask-image: linear-gradient(
@@ -27,6 +27,7 @@
 
 .center {
   text-align: center;
+  margin: 0 auto;
 }
 
 .mt-0 {

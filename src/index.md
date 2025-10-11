@@ -118,6 +118,10 @@ How much more confident would you be if you had that **understanding**?
 
 <%= render "cta", price: price %>
 
+![An image of Turbo Frames chapter in the web version of the book](/images/web-version-turbo-frames.png){: .fade-vertical width="100%"}
+*The web version of the book*
+{: .center }
+
 ## "How would you implement this UI with Hotwire?"
 
 A common question is how one would implement a particular UI using Hotwire.
@@ -137,6 +141,8 @@ This is what is waiting for you inside my **short e-book**: "Master Hotwire".
 Learn in bite-sized step by step lessons, guiding you through development of a collaborative *Kanban board application*. Immediately actionable knowledge is delivered in every lesson, starting with the very first one. You could even develop your own application in parallel, as you go.
 
 ![An image sample of Kanban board building part](/images/pdfsamplecodealong.png){: .fade-vertical width="100%"}
+*The PDF version of the book*
+{: .center }
 
 ## Get a deep understanding to implement the best solution
 
@@ -145,6 +151,8 @@ Official documentation and most online tutorials and courses explain how to **us
 After introducing each concept, the book takes another step and explains how each part of Hotwire actually works under the hood. This is what you need to know that you picked the best solution. This is what enables you to debug issues in **minutes, not hours**.
 
 ![An image sample of a deep dive chapter](/images/pdfsampledeepdive.png){: .fade-vertical width="100%"}
+*A sample of a deep dive chapter from the PDF version of the book*
+{: .center }
 
 ### What if you're too busy?
 
