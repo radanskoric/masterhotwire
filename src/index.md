@@ -5,6 +5,7 @@ image: /images/hotwire-in-hands.png
 ---
 
 <% sales_count = 250 %>
+<% price = 38 %>
 
 <script async data-uid="feaa96bc97" src="https://thoughtful-producer-2834.kit.com/feaa96bc97/index.js"></script>
 
@@ -115,7 +116,7 @@ Hotwire applications *can* turn into *spaghetti* code with RESTless Rails contro
 
 How much more confident would you be if you had that **understanding**?
 
-<%= render "cta" %>
+<%= render "cta", price: price %>
 
 ## "How would you implement this UI with Hotwire?"
 
@@ -169,7 +170,7 @@ This is exactly what's waiting in Part II of "Master Hotwire". And it doesn't re
 
 <div class="sales-in-text"><%= sales_count %>+ copies sold</div>
 
-<%= render "cta" %>
+<%= render "cta", price: price %>
 
 ## What readers are saying
 
@@ -203,7 +204,7 @@ Wondering what's inside? Here's the list of chapter titles:
   - 2.8. Where to go from here?
 - 3.0. Part III: Where you learn how to take it further *(coming soon)*
   - 3.1. How to debug Hotwire applications *(coming soon)*
-  - 3.2. Understand how Turbo manages browsing history *(coming soon)*
+  - 3.2. Understand how Turbo Cache manages browsing history *(coming soon)*
   - 3.3. Advanced Stimulus usage *(coming soon)*
   - 3.4. A primer on system testing Hotwire apps *(coming soon)*
   - 3.5. Adding Turbo to a legacy application *(coming soon)*
@@ -224,7 +225,7 @@ Oh no! Send an email to [me@radanskoric.com](mailto:me@radanskoric.com).
 
 **How much will the book cost?**
 
-The book is currently in Beta and selling for <b>€38</b>. For that price you will receive the fully completed part I and II (see list of chapters above for details), and lifetime access to all future versions and updates.
+The book is currently in Beta and selling for <b>€<%= price %></b>. For that price you will receive the fully completed part I and II (see list of chapters above for details), and lifetime access to all future versions and updates.
 
 **What is included in the beta version purchase?**
 
@@ -240,4 +241,9 @@ If, for any reason, you find yourself less than fully satisfied with the book, y
 
 Absolutely! After making a purchase you will automatically receive a receipt. If you need a more detailed invoice, just [e-mail me](mailto:me@radanskoric.com).
 
-<%= render "cta" %>
+**Do you have team licenses?**
+
+I can do that. Email me at [me@radanskoric.com](mailto:me@radanskoric.com) and I can send you a payment link and set up a license for your team.
+You will need a business domain and the license works by allowing anyone with an e-mail on the provided domain automatic access to the book, via the book's web version. The price of the team license is €<%= price * 5 %>.
+
+<%= render "cta", price: price %>
