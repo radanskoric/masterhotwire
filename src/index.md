@@ -211,11 +211,11 @@ Wondering what's inside? Here's the list of chapter titles:
   - 2.7. Publish native applications
   - 2.8. Where to go from here?
 - 3.0. Part III: Where you learn how to take it further *(coming soon)*
-  - 3.1. How to debug Hotwire applications *(coming soon)*
-  - 3.2. Understand how Turbo Cache manages browsing history *(coming soon)*
-  - 3.3. Advanced Stimulus usage *(coming soon)*
-  - 3.4. A primer on system testing Hotwire apps *(coming soon)*
-  - 3.5. Adding Turbo to a legacy application *(coming soon)*
+  - 3.1. Understand how Turbo Cache manages browsing history *(coming soon)*
+  - 3.2. Advanced Stimulus usage *(coming soon)*
+  - 3.3. A primer on system testing Hotwire apps *(coming soon)*
+  - 3.4. Adding Turbo to a legacy application *(coming soon)*
+  - 3.5. How to debug Hotwire applications *(coming soon)*
 
 ## Build that side-project in record time
 
