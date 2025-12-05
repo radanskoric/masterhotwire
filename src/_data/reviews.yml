@@ -25,6 +25,12 @@
 
     It's a short one, but a huge "a-ha!" moment for me.
 
+- name: Louis Kottmann
+  link: https://www.linkedin.com/in/louis-kottmann-bb0107153/
+  title: Tech Lead
+  quote: >
+    I enjoyed reading and searching through this book for design details and proper ways. Its structured chapters and "to-the-point" style enable me to use it as a reference.
+
 - name: Ian Hall
   link: https://www.linkedin.com/in/ian-hall-646a107/
   title: software developer
@@ -38,12 +44,6 @@
   title: software developer
   quote: >
     Having worked alongside Radan for many years, I can vouch that this book is exactly what you'd expect from him - breaking down Turbo Drive, Frames, Streams, and all that Hotwire goodness in that annoyingly clear way he does. I've been using the Hotwire stack since its release, yet I still learned a ton of new insights and practical approaches.
-
-- name: Tony Franco
-  link: https://x.com/anthony_franco
-  title: tech entrepreneur
-  quote: >
-    I struggled to find current and reliable tutorials on Hotwire, and this book was exactly what I needed. The practical tips and hands-on approach helped me overcome my biggest development hurdles. Highly recommended for anyone looking to supercharge their Hotwire skills.
 
 - name: Tilmann Singer
   link: https://github.com/til/
@@ -62,6 +62,20 @@
   title: software developer
   quote: >
     This book is an excellent companion for implementing real-world applications with Hotwire. Unlike many entry-level tutorials that quickly jump into "draw the rest of the owl" territory, Radan guides us through incrementally more complex problems, demonstrating how to tackle them with great pedagogy. As a bonus, each step includes a detailed paragraph explaining the framework's internals and why everything works as it does. I highly recommend Master Hotwire to any Ruby on Rails developer looking to enhance their application with Hotwire.
+
+- name: Tony Franco
+  link: https://x.com/anthony_franco
+  title: tech entrepreneur
+  quote: >
+    I struggled to find current and reliable tutorials on Hotwire, and this book was exactly what I needed. The practical tips and hands-on approach helped me overcome my biggest development hurdles. Highly recommended for anyone looking to supercharge their Hotwire skills.
+
+- name: Josip Frkin
+  link:
+  title: software developer
+  quote: >
+    I love how the book doesn't just explain what Hotwire can do.
+    It keeps you engaged by laying out the problem first and then showing how Hotwire solves it.
+    On top of that, the “under the hood” sections scratch my developer itch by showing the actual implementation details along with source code links.
 
 - name: Petr Reichl
   link: https://x.com/meap

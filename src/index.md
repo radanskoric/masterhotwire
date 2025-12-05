@@ -4,7 +4,7 @@ paddle: true
 image: /images/hotwire-in-hands.png
 ---
 
-<% sales_count = 250 %>
+<% sales_count = 300 %>
 <% price = 38 %>
 
 <script async data-uid="feaa96bc97" src="https://thoughtful-producer-2834.kit.com/feaa96bc97/index.js"></script>
