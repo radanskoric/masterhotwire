@@ -5,7 +5,7 @@ image: /images/hotwire-in-hands.png
 ---
 
 <% sales_count = 300 %>
-<% price = 38 %>
+<% price = 49 %>
 
 <script async data-uid="feaa96bc97" src="https://thoughtful-producer-2834.kit.com/feaa96bc97/index.js"></script>
 
@@ -39,6 +39,8 @@ image: /images/hotwire-in-hands.png
 {: .mt-0}
 
 *An e-book for experienced Rails developers to quickly get up to speed with Hotwire and Hotwire Native.*
+
+One purchase, three formats, lifetime updates.
 
 Written by [Radan Skorić](https://radanskoric.com).
 
@@ -136,7 +138,7 @@ What if:
 You could focus most of your energy on the really interesting part, on the part of the code that is actually solving the user problem.
 You would be able to reap full benefits of Hotwire's compression of complexity.
 
-This is what is waiting for you inside my **short e-book**: "Master Hotwire".
+This is what is waiting for you inside my **e-book**: "Master Hotwire".
 
 Learn in bite-sized step by step lessons, guiding you through development of a collaborative *Kanban board application*. Immediately actionable knowledge is delivered in every lesson, starting with the very first one. You could even develop your own application in parallel, as you go.
 
@@ -177,6 +179,23 @@ However, it's not the right fit for every project. Thankfully, the same deep und
 This is exactly what's waiting in Part II of "Master Hotwire". And it doesn't require you to spend a lot of time learning native development. When you finish Part II you will understand how it works and you'll be able to build and launch a native app mostly using your existing web development skills. For a lot of projects this is more than enough. And if you need to push it further, you'll be able to use any native development resources. Hotwire Native enables that and "Master Hotwire" gives you the needed understanding.
 
 <div class="sales-in-text"><%= sales_count %>+ copies sold</div>
+
+### Available in 3 formats
+
+<div class="formats-grid" aria-label="Book formats">
+  <div class="format-card">
+    <div class="format-title">Web</div>
+    <div class="format-description">Easy to read, easy to copy code snippets.</div>
+  </div>
+  <div class="format-card">
+    <div class="format-title">PDF</div>
+    <div class="format-description">Printable, easy to annotate.</div>
+  </div>
+  <div class="format-card">
+    <div class="format-title">EPUB</div>
+    <div class="format-description">For your Kindle or other e-reader.</div>
+  </div>
+</div>
 
 <%= render "cta", price: price %>
 
@@ -231,15 +250,15 @@ The book is structured so that you can immediately start building an application
 
 Oh no! Send an email to [me@radanskoric.com](mailto:me@radanskoric.com).
 
-**How much will the book cost?**
+**How much does the book cost?**
 
-The book is currently in Beta and selling for <b>€<%= price %></b>. For that price you will receive the fully completed part I and II (see list of chapters above for details), and lifetime access to all future versions and updates.
+The book is priced at <b>€<%= price %></b>. For that price you will receive the book (see list of chapters above for details), and lifetime access to all future versions and updates.
 
-**What is included in the beta version purchase?**
+**What is included in the purchase?**
 
-Immediately upon purchase you will receive access to the always up to date Web and PDF versions of the book. The list of chapters above outlines exactly what is currently finished.
+Immediately upon purchase you will receive access to the always up to date Web, PDF and EPUB versions of the book. The list of chapters above outlines the content.
 
-You will also receive all future updates to the book and all future format additions. You will get all of that included for the beta price and will get life time access to all updates to the book.
+You will also receive all future updates to the book. You will get all of that included for the price of the book and will get life time access to all updates to the book.
 
 **Is there a money back guarantee?**
 
@@ -251,7 +270,7 @@ Absolutely! After making a purchase you will automatically receive a receipt. If
 
 **Do you have team licenses?**
 
-I can do that. Email me at [me@radanskoric.com](mailto:me@radanskoric.com) and I can send you a payment link and set up a license for your team.
+Yes, I do! Email me at [me@radanskoric.com](mailto:me@radanskoric.com) and I will send you a payment link and set up a license for your team.
 You will need a business domain and the license works by allowing anyone with an e-mail on the provided domain automatic access to the book, via the book's web version. The price of the team license is €<%= price * 5 %>.
 
 <%= render "cta", price: price %>

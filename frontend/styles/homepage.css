@@ -88,6 +88,14 @@
   margin-bottom: 2rem;
 }
 
+.cta-formats {
+  text-align: center;
+  color: var(--dimmed-color);
+  font-size: 0.95rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
 .buy-button-container {
   text-align: center;
 }
@@ -163,6 +171,40 @@
 .buy-button-top-right {
   position: static;
   padding: 0.25rem 0.75rem;
+}
+
+.formats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.5rem auto 2.5rem;
+  max-width: 65ch;
+}
+
+@media (min-width: 768px) {
+  .formats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: var(--max-width);
+  }
+}
+
+.format-card {
+  background: var(--element-background);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.format-title {
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 0.35rem;
+}
+
+.format-description {
+  color: var(--dimmed-color);
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .sign-in-link {
