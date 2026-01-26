@@ -220,6 +220,7 @@ Wondering what's inside? Here's the list of chapter titles:
   - 1.9. Improve UX with Stimulus
   - 1.10. Stimulus being different from other frontend frameworks helps when a Hotwire application grows
   - 1.11. Exercise - Allow creating tickets directly in the columns
+  - 1.12. End of Part I
 - 2.0. Part II: Where you learn how to package a web app into native mobile apps with Hotwire Native
   - 2.1. History of Hotwire Native
   - 2.2. Mobile apps UI is different from the web
@@ -235,6 +236,7 @@ Wondering what's inside? Here's the list of chapter titles:
   - 3.3. A primer on system testing Hotwire apps
   - 3.4. Adding Turbo to a legacy application
   - 3.5. How to debug Hotwire applications
+- 4.0. What's next?
 
 ## Build that side-project in record time
 
