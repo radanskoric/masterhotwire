@@ -8,12 +8,8 @@
         </div>
       <% end %>
       <div class="reviewer">
-        <% if review[:link] %>
-          <a href="<%= review[:link] %>" target="_blank" rel="noopener"><%= review[:name] %></a>
-        <% else %>
-          <%= review[:name] %>
-        <% end %>
-        <span class="reviewer-title">, <%= review[:title] %></span>
+        <%# Keep on same line so that the comma would follow the name closely %>
+        <% if review[:link] %><a href="<%= review[:link] %>" target="_blank" rel="noopener"><%= review[:name] %></a><% else %><%= review[:name] %><% end -%><% if review[:title] %>, <span class="reviewer-title"><%= review[:title] %></span><% end %>
       </div>
     </div>
   <% end %>
