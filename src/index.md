@@ -5,7 +5,7 @@ image: /images/hotwire-in-hands.png
 ---
 
 <% sales_count = 300 %>
-<% price = 38 %>
+<% price = 49 %>
 
 <script async data-uid="feaa96bc97" src="https://thoughtful-producer-2834.kit.com/feaa96bc97/index.js"></script>
 
@@ -262,6 +262,8 @@ Immediately upon purchase you will receive access to the always up to date Web, 
 
 You will also receive all future updates to the book. You will get all of that included for the price of the book and will get life time access to all updates to the book.
 
+You always have access to the latest version of the book in all formats through the reader's area at: [book.masterhotwire.com](https://book.masterhotwire.com){:target="_blank"}.
+
 **Is there a money back guarantee?**
 
 If, for any reason, you find yourself less than fully satisfied with the book, you may request a refund any time within 30 days of the purchase. Just send an e-mail to [me@radanskoric.com](mailto:me@radanskoric.com) and include your reason for requesting the refund.
@@ -273,6 +275,6 @@ Absolutely! After making a purchase you will automatically receive a receipt. If
 **Do you have team licenses?**
 
 Yes, I do! Email me at [me@radanskoric.com](mailto:me@radanskoric.com) and I will send you a payment link and set up a license for your team.
-You will need a business domain and the license works by allowing anyone with an e-mail on the provided domain automatic access to the book, via the book's web version. The price of the team license is €<%= price * 5 %>.
+You will need a business domain and the license works by allowing anyone with an e-mail on the provided domain automatic access to the book, via the book's web version at [book.masterhotwire.com](https://book.masterhotwire.com){:target="_blank"}. The price of the team license is €<%= price * 5 %>.
 
 <%= render "cta", price: price %>
