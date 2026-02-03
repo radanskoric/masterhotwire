@@ -28,6 +28,21 @@ image: /images/hotwire-in-hands.png
   <a href="https://book.masterhotwire.com" class="sign-in-link">reader sign-in</a>
 </div>
 
+<nav class="toc-desktop" aria-label="Table of contents">
+  <ul class="toc-list">
+    <li><a href="#build-modern-web-apps">Start here</a></li>
+    <li><a href="#simple-and-fun">Modern UI can be simple</a></li>
+    <li><a href="#html-over-the-wire">HTML-over-the-wire</a></li>
+    <li><a href="#hotwire-mistake">Can Hotwire be a mistake?</a></li>
+    <li><a href="#deep-understanding">Get a deep understanding</a></li>
+    <li><a href="#hotwire-native">Power of Hotwire Native</a></li>
+    <li><a href="#reviews">What readers are saying</a></li>
+    <li><a href="#chapters">List of chapters</a></li>
+    <li><a href="#side-project">Build that side-project</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
 
 # Master Hotwire
 {: .mb-0}
@@ -36,7 +51,7 @@ image: /images/hotwire-in-hands.png
 {: .center.mt-0.mb-0}
 
 ## Build Modern Web Apps with Rails Simplicity
-{: .mt-0}
+{: #build-modern-web-apps .mt-0}
 
 *An e-book for experienced Rails developers to quickly get up to speed with Hotwire and Hotwire Native.*
 
@@ -45,6 +60,7 @@ One purchase, three formats, lifetime updates.
 Written by [Radan Skorić](https://radanskoric.com).
 
 ## Can modern web UI be simple and fun to build?
+{: #simple-and-fun}
 
 Do you feel like the mainstream approaches to building a modern web UI have become too complicated? You're spending more time *plugging everything together* than actually implementing the solution.
 
@@ -62,12 +78,14 @@ Imagine that you can develop with the old speed and simplicity but still deliver
 How good would that be?
 
 ## Is HTML-over-the-wire the fix?
+{: #html-over-the-wire}
 
 **Hotwire**, or HTML over the wire, recaptures the old ease of development while keeping the modern user experience. Everything we need to render the correct HTML is already right here on the server, in our **backend logic**. It's crazy to have to serialise it to JSON, ship to a completely different frontend application, deserialise it, pass it through a dozen nested components which update the Virtual DOM which then, finally, finally, updates the counter widget. Yes, of course, I'm paraphrasing but I think you get the point.
 
 HTML-over-the-wire is a **game changer**, especially when paired with a super productive backend framework like **Ruby on Rails**. It's doing a full circle. It's going back to tried and true, "boring" Hypermedia technology: HTTP and HTML. This time, thanks to browser advancements, Hotwire enhances it so it can be used for building a highly responsive and modern user experience.
 
 ## Can picking Hotwire turn out to be a mistake?
+{: #hotwire-mistake}
 
 However, Hotwire is not a free lunch. A poorly designed Hotwire application can:
 - be hard to maintain
@@ -92,6 +110,7 @@ However, you do need to:
 Hotwire is a powerful tool that powers a very fast, productive and high quality way of developing applications. You can recapture the simplicity of development you once enjoyed while still delivering a modern user experience. Implementing UIs really can be fun!
 
 ## "I am trying to understand it and find it extremely convoluted"
+{: #convoluted}
 
 A poorly designed Hotwire application can get out of hand by:
 - Having long brittle update logic turning Rails controllers into a spaghetti mess.
@@ -125,6 +144,7 @@ How much more confident would you be if you had that **understanding**?
 {: .center }
 
 ## "How would you implement this UI with Hotwire?"
+{: #how-would-you-implement}
 
 A common question is how one would implement a particular UI using Hotwire.
 
@@ -147,6 +167,7 @@ Learn in bite-sized step by step lessons, guiding you through development of a c
 {: .center }
 
 ## Get a deep understanding to implement the best solution
+{: #deep-understanding}
 
 Official documentation and most online tutorials and courses explain how to **use** Hotwire. That is enough for you to build your application but it's not enough to really know if you picked the best approach and built a long term maintainable application. It's not enough to quickly fix unexpected issues. For that you need a **deep understanding**.
 
@@ -169,6 +190,7 @@ It's condensed experienced that you are able to consume in a short amount of tim
 You will gain an accurate mental model and understanding of Hotwire. You will be able to connect it to the body of knowledge and experience you already posses to develop new or introduce Hotwire to existing applications with complete confidence.
 
 ### Is Hotwire Native really a shortcut to launching a native mobile app?
+{: #hotwire-native}
 
 Hotwire Native has recently improved **in strides** but it's still hard to tell if its a viable option for your project.
 
@@ -200,10 +222,12 @@ This is exactly what's waiting in Part II of "Master Hotwire". And it doesn't re
 <%= render "cta", price: price %>
 
 ## What readers are saying
+{: #reviews}
 
 <%= render "reviews" %>
 
 ## List of chapters
+{: #chapters}
 
 Wondering what's inside? Here's the list of chapter titles:
 
@@ -239,6 +263,7 @@ Wondering what's inside? Here's the list of chapter titles:
 - 4.0. What's next?
 
 ## Build that side-project in record time
+{: #side-project}
 
 If your day job is a huge legacy application, switching to Hotwire might seem like an impossible task. And while the book also has a special section on introducing Hotwire to a legacy application, it's also perfect for launching a side-project.
 
@@ -247,6 +272,7 @@ Hotwire and Rails are arguably the most productive combination for launching an 
 The book is structured so that you can immediately start building an application and then enhance it as you learn new concepts. Even if you only have a few hours a week that will be enough to work through the book in a few weeks and build the first version of your application along side it.
 
 ## Frequently Asked Questions
+{: #faq}
 
 **I'm having issues with the book. Who can I contact?**
 

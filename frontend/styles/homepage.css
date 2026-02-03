@@ -212,3 +212,102 @@
   color: var(--dimmed-color);
 }
 
+.toc-desktop {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .toc-desktop {
+    display: block;
+    position: fixed;
+    left: 0.5rem;
+    top: 6rem;
+    width: 210px;
+    padding: 0.75rem 0.75rem 0.75rem 1.5rem;
+    background: transparent;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+  }
+
+  .toc-desktop:is(:hover, :focus-within) {
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(2px);
+  }
+
+  .toc-desktop .toc-list {
+    --toc-line-x: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+    max-height: calc(100vh - 11rem);
+    overflow-y: auto;
+    overflow-x: visible;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .toc-desktop .toc-list::before {
+    content: "";
+    position: absolute;
+    left: var(--toc-line-x);
+    top: calc(0.55rem + 3px);
+    bottom: calc(0.55rem + 3px);
+    width: 2px;
+    background: rgba(200, 200, 200);
+    z-index: 0;
+  }
+
+  .toc-desktop .toc-list li {
+    position: relative;
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  .toc-desktop .toc-list li::before {
+    content: "";
+    position: absolute;
+    left: calc(var(--toc-line-x) - 3px);
+    top: 0.55rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: rgba(200,200,200);
+    z-index: 2;
+  }
+
+  .toc-desktop .toc-list a {
+    display: block;
+    color: var(--dimmed-color);
+    font-size: 0.9rem;
+    line-height: 1.3;
+    padding: 0.15rem 0;
+    border-bottom-color: transparent;
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+    pointer-events: none;
+  }
+
+  .toc-desktop .toc-list a:hover {
+    color: var(--heading-color-secondary);
+    opacity: 1;
+  }
+
+  .toc-desktop:is(:hover, :focus-within) .toc-list a {
+    opacity: 0.85;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+
+  .toc-desktop:is(:hover, :focus-within) .toc-list::before {
+    background: rgba(150, 150, 150);
+  }
+
+  .toc-desktop:is(:hover, :focus-within) .toc-list li::before {
+    background: rgba(150, 150, 150);
+  }
+}
+
