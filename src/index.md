@@ -38,11 +38,10 @@ image: /images/hotwire-in-hands.png
     <li><a href="#hotwire-native">Power of Hotwire Native</a></li>
     <li><a href="#reviews">What readers are saying</a></li>
     <li><a href="#chapters">List of chapters</a></li>
-    <li><a href="#side-project">Build that side-project</a></li>
+    <li><a href="#side-project">Move fast, stay in control</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
 </nav>
-
 
 # Master Hotwire
 {: .mb-0}
@@ -128,12 +127,13 @@ Once you **master** a sharp knife you can get a lot done quickly without the dan
 
 You could:
 - Get so much **more** done in less time.
-- Actually **finish** that side-project with the little spare time that you have.
+- Use coding agents to help you build without giving up **control** of the codebase.
+- Ship a side-project quickly and still understand every moving part.
 - Use your knowledge of server side rendering to **build** modern web UIs.
 - **Increase** the value of your existing Rails knowledge.
 - Recapture the **joy** of developing web applications that you once had.
 
-Hotwire applications *can* turn into *spaghetti* code with RESTless Rails controllers and hard to follow Stimulus controllers, but they don't have to. Once you understand it you can avoid its pitfalls and play to its strengths. This is what you did with all powerful technologies that you mastered before. The best antidote to pitfalls of a powerful tool is your **deep understanding** of how it works and how best to use it.
+Hotwire applications *can* turn into *spaghetti* code with RESTless Rails controllers and hard to follow Stimulus controllers, but they don't have to. Once you understand it you can avoid its pitfalls and play to its strengths. That matters even more now that coding agents can generate code so quickly. Hotwire compresses complexity, which makes the resulting application easier to reason about, easier to maintain, and easier to keep under your control. The best antidote to pitfalls of a powerful tool is your **deep understanding** of how it works and how best to use it.
 
 How much more confident would you be if you had that **understanding**?
 
@@ -153,10 +153,10 @@ You already know how to implement the actual problem solving part but you *don't
 What if:
 - You knew exactly how to implement complex features using Hotwire?
 - You knew how to keep everything simple and performant?
-- Building with Hotwire was as easy to you as building a plain HTML page?
+- You could move quickly, with or without coding agents, without losing track of how the app works?
 
 You could focus most of your energy on the really interesting part, on the part of the code that is actually solving the user problem.
-You would be able to reap full benefits of Hotwire's compression of complexity.
+You would be able to reap full benefits of Hotwire's compression of complexity while still keeping the application understandable and maintainable.
 
 This is what is waiting for you inside my **e-book**: "Master Hotwire".
 
@@ -262,14 +262,14 @@ Wondering what's inside? Here's the list of chapter titles:
   - 3.5. How to debug Hotwire applications
 - 4.0. What's next?
 
-## Build that side-project in record time
+## Move fast without giving up control
 {: #side-project}
 
-If your day job is a huge legacy application, switching to Hotwire might seem like an impossible task. And while the book also has a special section on introducing Hotwire to a legacy application, it's also perfect for launching a side-project.
+If your day job is a huge legacy application, switching to Hotwire might seem like an impossible task. And while the book also has a special section on introducing Hotwire to a legacy application, it's also perfect if you want to bring a side-project to life quickly without creating a codebase you dread coming back to.
 
-Hotwire and Rails are arguably the most productive combination for launching an application from scratch.
+Coding agents can help you ship a first version quickly with almost any technology. Hotwire's advantage is that it compresses complexity. Combined with Rails, it gives you a way to move fast while keeping the application understandable, maintainable, and firmly under your control.
 
-The book is structured so that you can immediately start building an application and then enhance it as you learn new concepts. Even if you only have a few hours a week that will be enough to work through the book in a few weeks and build the first version of your application along side it.
+The book is structured so that you can immediately start building an application and then enhance it as you learn new concepts. Even if you only have a few hours a week that will be enough to work through the book in a few weeks and build the first version of your application alongside it, one you can still reason about, maintain, and confidently extend for as long as you wish.
 
 ## Frequently Asked Questions
 {: #faq}
