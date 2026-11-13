@@ -311,3 +311,25 @@
   }
 }
 
+
+.featured-review {
+  margin: 1.5rem 0;
+}
+
+.featured-review .review-box {
+  margin-bottom: 0;
+  padding: 1rem;
+  box-shadow: none;
+}
+
+.featured-review blockquote {
+  margin-bottom: 0.75rem;
+}
+
+.purchase-guarantee {
+  color: var(--dimmed-color);
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}

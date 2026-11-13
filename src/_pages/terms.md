@@ -12,7 +12,7 @@ After purchasing the book you can use it for your own personal use.
 
 You are not allowed to share or resell it.
 
-If you don't like it for whatever reason, you can get a full refund within 30 days of purchase. The only requirement is sharing your reason, any reason, for requesting the refund.
+You can get a full refund within 30 days of purchase, no questions asked. You do not need to provide a reason.
 
 ## The Boring Details
 
@@ -65,7 +65,7 @@ You assign all rights, title and interest in any Feedback You provide the Compan
 
 ### 7. Refunds
 
-The Company offers a 30 day full refund policy on the Materials. To request the refund send an email to [me@radanskoric.com](mailto:me@radanskoric.com) any time within 30 days of purchase with the reason for requesting the refund. We'll process a refund for the full purchase price, which will be credited back to your original payment method.
+The Company offers a 30-day full refund policy on the Materials, no questions asked. To request the refund send an email to [me@radanskoric.com](mailto:me@radanskoric.com) any time within 30 days of purchase. You do not need to provide a reason. We'll process a refund for the full purchase price, which will be credited back to your original payment method.
 
 ### 8. Links
 

@@ -5,5 +5,11 @@
 
   <div class="cta-formats">Instant access to: <b>Web + PDF + EPUB</b></div>
 
+  <% if defined?(show_review) && show_review %>
+    <div class="featured-review">
+      <%= render "review", review: site.data.reviews.find { |review| review[:name] == "Miles Woodroffe" } %>
+    </div>
+  <% end %>
+
   Note sure yet? Subscribe to get the free sample chapters and be notified of future book updates and discounts. <a data-formkit-toggle="feaa96bc97" href="https://thoughtful-producer-2834.kit.com/feaa96bc97">Click here to subscribe and receive the sample chapters.</a>
 </div>

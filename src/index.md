@@ -38,7 +38,7 @@ image: /images/hotwire-in-hands.png
     <li><a href="#hotwire-native">Power of Hotwire Native</a></li>
     <li><a href="#reviews">What readers are saying</a></li>
     <li><a href="#chapters">List of chapters</a></li>
-    <li><a href="#side-project">Move fast, stay in control</a></li>
+    <li><a href="#side-project">Hotwire in an existing app</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
 </nav>
@@ -49,39 +49,49 @@ image: /images/hotwire-in-hands.png
 ![Boy hands holding two wires with a bright yellow spark between them](/images/hotwire-in-hands.png){: width="60%"}
 {: .center.mt-0.mb-0}
 
-## Build Modern Web Apps with Rails Simplicity
+For experienced Rails developers
+{: .center.mb-0}
+
+## Become as fluent with Hotwire as you are with Rails
 {: #build-modern-web-apps .mt-0}
 
-*An e-book for experienced Rails developers to quickly get up to speed with Hotwire and Hotwire Native.*
+*A practical e-book to quickly get up to speed with Hotwire and Hotwire Native and understand how they work under the hood, so you can choose the right approach, debug with confidence, and build applications you can maintain for years.*
 
 One purchase, three formats, lifetime updates.
 
-Written by [Radan Skorić](https://radanskoric.com).
+Written by [Radan Skorić](https://radanskoric.com). [Watch my talk on Hotwire at RailsWorld 2025.](https://www.youtube.com/watch?v=kWFYc6qrXIo){: target="_blank"}
+
+<div class="featured-review">
+  <p>Recommended by a principal programmer at 37signals, the team behind Hotwire:</p>
+  <%= render "review", review: site.data.reviews.find { |review| review[:name] == "Rosa Gutiérrez" } %>
+</div>
 
 ## Can modern web UI be simple and fun to build?
 {: #simple-and-fun}
 
-Do you feel like the mainstream approaches to building a modern web UI have become too complicated? You're spending more time *plugging everything together* than actually implementing the solution.
+Do you feel like the mainstream approaches to building a modern web UI have become too complicated? Coding agents can produce a working feature quickly. But you still need to understand how it works, whether it fits your application, and what will happen when you change it.
 
-It used to be so simple. Write the backend logic, sprinkle jQuery effects, add some AJAX calls and you're golden. Unfortunately that was hard to maintain when the application grew. And users expect a more polished experience. It's no longer enough.
+That gets harder when a single interaction spans backend logic, an API, frontend state, and a tree of components. You can delegate writing the code. You still need to be able to reason about the result.
 
-The usual industry solution are Single Page Applications (SPAs). They deliver a great UX but also bring many problems:
+Single Page Applications (SPAs) often introduce exactly these boundaries. They deliver a great UX but also bring many problems:
 - 2 different applications (backend and frontend) that have to synchronise state.
 - Business logic being duplicated between backend and frontend.
 - A complex API to maintain.
 - An arcane build system that regularly breaks.
-- A whole frontend framework to learn with a completely different way of working compared to the backend.
-- Every new feature that spans both the backend and the frontend takes a long time to implement.
+- A whole frontend framework with its own conventions and lifecycle to understand when reviewing a change.
+- A single feature can require coordinated changes across both applications, leaving more code and interactions to review.
 
-Imagine that you can develop with the old speed and simplicity but still deliver a polished and modern user experience.
+Imagine easily following a feature from the user's action to your Rails code and back to the updated page, with fewer layers in between. Less machinery to understand. Fewer places for an unnecessary abstraction or duplicated rule to hide.
 How good would that be?
 
 ## Is HTML-over-the-wire the fix?
 {: #html-over-the-wire}
 
-**Hotwire**, or HTML over the wire, recaptures the old ease of development while keeping the modern user experience. Everything we need to render the correct HTML is already right here on the server, in our **backend logic**. It's crazy to have to serialise it to JSON, ship to a completely different frontend application, deserialise it, pass it through a dozen nested components which update the Virtual DOM which then, finally, finally, updates the counter widget. Yes, of course, I'm paraphrasing but I think you get the point.
+**Hotwire**, or HTML over the wire, keeps much of your UI logic where your application logic already lives: on the server. Rails renders the HTML, and Hotwire updates the page. You can build interactive interfaces without maintaining a separate frontend application for them.
 
-HTML-over-the-wire is a **game changer**, especially when paired with a super productive backend framework like **Ruby on Rails**. It's doing a full circle. It's going back to tried and true, "boring" Hypermedia technology: HTTP and HTML. This time, thanks to browser advancements, Hotwire enhances it so it can be used for building a highly responsive and modern user experience.
+Everything we need to render the correct HTML is already right here on the server, in our **backend logic**. It's crazy to have to serialise it to JSON, ship to a completely different frontend application, deserialise it, pass it through a dozen nested components which update the Virtual DOM which then, finally, finally, updates the counter widget. Yes, of course, I'm paraphrasing but I think you get the point. Each new moving piece is a potential source of bugs and complexity.
+
+This is what **compression of complexity** means in practice: fewer layers, less duplicated state, and more of the feature expressed in familiar Rails code. That gives you a smaller system to understand when reviewing a change. It also gives a coding agent a more direct path to implementing it, with fewer boundaries to coordinate across.
 
 ## Can picking Hotwire turn out to be a mistake?
 {: #hotwire-mistake}
@@ -91,10 +101,19 @@ However, Hotwire is not a free lunch. A poorly designed Hotwire application can:
 - end up being sluggish to use
 - lead to higher server resource usage
 
-It's a different way of developing the applications and it has its quirks and gotchas. If you don't understand how to use it, you can end up questioning your lifestyle choices.
+An agent can produce working Hotwire code that still scatters logic across frames, streams, and controllers. You need enough understanding to spot when a straightforward feature is turning into a workaround.
 
-Used correctly it will dramatically boost your productivity. But if you use it incorrectly you can be left feeling like you're fighting it.
-Good news is that you definitely can avoid the negative scenario.
+## "I am trying to understand it and find it extremely convoluted"
+{: #convoluted}
+
+Whether you write the code yourself or review an agent's work, these are the warning signs to look for:
+- Long brittle update logic turning Rails controllers into a spaghetti mess.
+- Related logic scattered across the app through naive use of Turbo Frames.
+- UI that leaves you wondering "where is this piece even coming from??"
+- Hard to follow workarounds for things that don't work out of the box with Turbo.
+- Features that break in strange ways.
+
+Just like Ruby and Ruby on Rails, Hotwire is a sharp knife. Learning to use it well lets you get a lot done without cutting yourself.
 
 ### Used correctly it will not be a mistake
 
@@ -106,38 +125,21 @@ However, you do need to:
 - Learn to compose the solution in a Hotwire friendly way.
 - Gain an understanding of the inner workings of Hotwire.
 
-Hotwire is a powerful tool that powers a very fast, productive and high quality way of developing applications. You can recapture the simplicity of development you once enjoyed while still delivering a modern user experience. Implementing UIs really can be fun!
-
-## "I am trying to understand it and find it extremely convoluted"
-{: #convoluted}
-
-A poorly designed Hotwire application can get out of hand by:
-- Having long brittle update logic turning Rails controllers into a spaghetti mess.
-- Naive use of Turbo Frames can lead to related logic being scattered across the app.
-- Leave you wondering "where is this piece of UI even coming from??"
-- Using hard to follow solutions for simple things that don't work out of the box with Turbo.
-- Break in strange ways.
-
-Just like Ruby and Ruby on Rails, Hotwire is a sharp knife. It's very powerful but you can cut yourself.
-As with all such technologies the secret is in getting proficient at using it.
-
-Once you **master** a sharp knife you can get a lot done quickly without the danger of cutting yourself.
-
 ### What would it mean if you were as fluent with Hotwire as you are with Rails itself?
 
 You could:
-- Get so much **more** done in less time.
-- Use coding agents to help you build without giving up **control** of the codebase.
-- Ship a side-project quickly and still understand every moving part.
-- Use your knowledge of server side rendering to **build** modern web UIs.
-- **Increase** the value of your existing Rails knowledge.
-- Recapture the **joy** of developing web applications that you once had.
+- Understand what changed and why, even when an agent wrote the code.
+- Recognize when a proposed solution adds unnecessary complexity.
+- Give agents clearer direction about how a feature should fit your application.
+- Debug across Rails and Hotwire without treating the frontend as a black box.
+- Build a side-project you can confidently return to and extend.
+- Recapture the joy of developing applications you understand.
 
-Hotwire applications *can* turn into *spaghetti* code with RESTless Rails controllers and hard to follow Stimulus controllers, but they don't have to. Once you understand it you can avoid its pitfalls and play to its strengths. That matters even more now that coding agents can generate code so quickly. Hotwire compresses complexity, which makes the resulting application easier to reason about, easier to maintain, and easier to keep under your control. The best antidote to pitfalls of a powerful tool is your **deep understanding** of how it works and how best to use it.
+A simpler architecture gives both you and your agents fewer moving parts to keep track of. Understanding Hotwire lets you preserve that simplicity as the application grows. You can delegate more of the implementation while staying in **control** of the codebase.
 
-How much more confident would you be if you had that **understanding**?
+"Master Hotwire" builds that understanding through step-by-step lessons: you develop a collaborative Kanban board application and learn how each part of Hotwire works under the hood.
 
-<%= render "cta", price: price %>
+<%= render "cta", price: price, show_review: true %>
 
 ![An image of Turbo Frames chapter in the web version of the book](/images/web-version-turbo-frames.png){: .fade-vertical width="100%"}
 *The web version of the book*
@@ -146,21 +148,19 @@ How much more confident would you be if you had that **understanding**?
 ## "How would you implement this UI with Hotwire?"
 {: #how-would-you-implement}
 
-A common question is how one would implement a particular UI using Hotwire.
+A common question is how should a particular UI be implemented using Hotwire.
 
-You already know how to implement the actual problem solving part but you *don't* know how to *assemble* it using Hotwire in an **elegant and maintainable** way.
+You already know how the actual problem solving part should be implemented but you *don't* know how it should be *assembled* using Hotwire in an **elegant and maintainable** way.
 
 What if:
 - You knew exactly how to implement complex features using Hotwire?
 - You knew how to keep everything simple and performant?
-- You could move quickly, with or without coding agents, without losing track of how the app works?
 
 You could focus most of your energy on the really interesting part, on the part of the code that is actually solving the user problem.
-You would be able to reap full benefits of Hotwire's compression of complexity while still keeping the application understandable and maintainable.
 
-This is what is waiting for you inside my **e-book**: "Master Hotwire".
+That is the goal of the project in "Master Hotwire".
 
-Learn in bite-sized step by step lessons, guiding you through development of a collaborative *Kanban board application*. Immediately actionable knowledge is delivered in every lesson, starting with the very first one. You could even develop your own application in parallel, as you go.
+Each bite-sized lesson adds to the collaborative *Kanban board application*, with knowledge you can apply from the very first lesson. You can also develop your own application in parallel, using each new concept as you learn it.
 
 ![An image sample of Kanban board building part](/images/pdfsamplecodealong.png){: .fade-vertical width="100%"}
 *The PDF version of the book*
@@ -185,20 +185,24 @@ This is why the book is aimed at **experienced** developers! Most tutorials spen
 
 Because you are experienced, I can condense the material, **saving you time**. I can then dig under the hood, giving you a **deeper understanding**. A junior developer would be overwhelmed by it but for you this might be the most interesting part.
 
-It's condensed experienced that you are able to consume in a short amount of time because of your existing expertise.
+It's condensed experience that you are able to consume in a short amount of time because of your existing expertise.
 
-You will gain an accurate mental model and understanding of Hotwire. You will be able to connect it to the body of knowledge and experience you already posses to develop new or introduce Hotwire to existing applications with complete confidence.
+Even with only a few hours a week, you can work through Part I in a few weeks, building a first version of your web application as you go.
 
-### Is Hotwire Native really a shortcut to launching a native mobile app?
+You will gain an accurate mental model and understanding of Hotwire. You will be able to connect it to the body of knowledge and experience you already possess to build new applications or introduce Hotwire to existing ones with confidence.
+
+### Can you bring your Rails application to mobile without rebuilding it?
 {: #hotwire-native}
 
-Hotwire Native has recently improved **in strides** but it's still hard to tell if its a viable option for your project.
+Once you have a web application, Part II explores how to bring it to mobile with Hotwire Native.
 
-For many projects it really is a shortcut to a native app that is so fast it will feel like you're cheating. While other teams are recreating their web apps using mobile technology, you'll be able to package and ship your web app as a native app **in a fraction of the time**. And once you understand how to do it properly, users will not be able to tell the difference.
+For suitable projects, Hotwire Native lets you reuse your existing web application inside a native app. Much of your application logic and UI stays in one place, instead of becoming a second implementation you have to keep in sync. You can add native behavior where the mobile experience calls for it.
 
 However, it's not the right fit for every project. Thankfully, the same deep understanding of how it works and how to use it properly will give you a clear understanding of when to use it.
 
-This is exactly what's waiting in Part II of "Master Hotwire". And it doesn't require you to spend a lot of time learning native development. When you finish Part II you will understand how it works and you'll be able to build and launch a native app mostly using your existing web development skills. For a lot of projects this is more than enough. And if you need to push it further, you'll be able to use any native development resources. Hotwire Native enables that and "Master Hotwire" gives you the needed understanding.
+Part II explains those tradeoffs as you build, without requiring you to spend a lot of time learning native development. When you finish Part II you will understand how it works and you'll be able to build and launch a native app mostly using your existing web development skills. For a lot of projects this is more than enough. And if you need to push it further, you'll be able to use any native development resources. Hotwire Native enables that and "Master Hotwire" gives you the needed understanding.
+
+And Hotwire Native provides an almost perfect division of labour between your and your coding agent: the agent can implement native components that you then compose from the comfort of the web.
 
 <div class="sales-in-text"><%= sales_count %>+ copies sold</div>
 
@@ -262,21 +266,25 @@ Wondering what's inside? Here's the list of chapter titles:
   - 3.5. How to debug Hotwire applications
 - 4.0. What's next?
 
-## Move fast without giving up control
+## Bring Hotwire into your existing application
 {: #side-project}
 
-If your day job is a huge legacy application, switching to Hotwire might seem like an impossible task. And while the book also has a special section on introducing Hotwire to a legacy application, it's also perfect if you want to bring a side-project to life quickly without creating a codebase you dread coming back to.
+If your day job is a huge legacy application, switching to Hotwire might seem like an impossible task. You need to understand how it fits into the application you already have.
 
-Coding agents can help you ship a first version quickly with almost any technology. Hotwire's advantage is that it compresses complexity. Combined with Rails, it gives you a way to move fast while keeping the application understandable, maintainable, and firmly under your control.
-
-The book is structured so that you can immediately start building an application and then enhance it as you learn new concepts. Even if you only have a few hours a week that will be enough to work through the book in a few weeks and build the first version of your application alongside it, one you can still reason about, maintain, and confidently extend for as long as you wish.
+The chapter "Adding Turbo to a legacy application" addresses that challenge directly. The mental model you build throughout the book gives you a foundation for deciding where Hotwire can help in your own codebase.
 
 ## Frequently Asked Questions
 {: #faq}
 
-**I'm having issues with the book. Who can I contact?**
+**Why learn Hotwire if a coding agent can write it for me?**
 
-Oh no! Send an email to [me@radanskoric.com](mailto:me@radanskoric.com).
+An agent can help you implement a feature, but you still need to judge the approach, review the changes, and understand failures. Learning how Hotwire works gives you the vocabulary to guide the agent and the mental model to evaluate its output. The book builds that understanding through a concrete application and explanations of the internals.
+
+**Why buy the book when the official documentation is free?**
+
+The official documentation is a useful reference, and you'll still use it alongside the book. You can also learn a lot from free tutorials and reading the source code.
+
+The book saves you the work of piecing those lessons together. You build a collaborative application step by step, learn how each feature works under the hood, and see how the pieces fit together into a maintainable application. That gives you a structured path to understanding the tradeoffs, choosing an approach, and debugging when something goes wrong.
 
 **How much does the book cost?**
 
@@ -286,13 +294,13 @@ The book is priced at <b>€<%= price %></b>. For that price you will receive th
 
 Immediately upon purchase you will receive access to the always up to date Web, PDF and EPUB versions of the book. The list of chapters above outlines the content.
 
-You will also receive all future updates to the book. You will get all of that included for the price of the book and will get life time access to all updates to the book.
+Your purchase includes lifetime access to all future updates, at no extra cost.
 
 You always have access to the latest version of the book in all formats through the reader's area at: [book.masterhotwire.com](https://book.masterhotwire.com){:target="_blank"}.
 
 **Is there a money back guarantee?**
 
-If, for any reason, you find yourself less than fully satisfied with the book, you may request a refund any time within 30 days of the purchase. Just send an e-mail to [me@radanskoric.com](mailto:me@radanskoric.com) and include your reason for requesting the refund.
+You can request a full refund any time within 30 days of purchase, no questions asked. Just send an e-mail to [me@radanskoric.com](mailto:me@radanskoric.com). You do not need to provide a reason.
 
 **Can I get an invoice?**
 
@@ -302,5 +310,9 @@ Absolutely! After making a purchase you will automatically receive a receipt. If
 
 Yes, I do! Email me at [me@radanskoric.com](mailto:me@radanskoric.com) and I will send you a payment link and set up a license for your team.
 You will need a business domain and the license works by allowing anyone with an e-mail on the provided domain automatic access to the book, via the book's web version at [book.masterhotwire.com](https://book.masterhotwire.com){:target="_blank"}. The price of the team license is €<%= price * 5 %>.
+
+**I'm having issues with the book. Who can I contact?**
+
+Oh no! Send an email to [me@radanskoric.com](mailto:me@radanskoric.com).
 
 <%= render "cta", price: price %>
